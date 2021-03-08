@@ -1,0 +1,207 @@
+$font1:'Anonymous Pro', monospace;
+$font2: 'IM Fell English', serif;
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #0f0f0f;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.bg{
+    background-image: url(main-page/bg.png);
+    height: 1325px;
+    z-index: 2;
+    position: relative;
+}
+
+.bg2{
+    margin-top: -590px;
+    z-index: 1;
+    background-color: #0F0C07;
+    
+}
+.title{
+    margin: 0px 0px 0px 295px;
+    margin-top: -130px;
+    
+    
+    
+}
+.color{
+    font-size: 110px;
+    font-family: 'IM Fell English', serif;
+    color: #BC8417;
+    letter-spacing: -1.5px;
+    margin: 180px 0px -210px 20px;
+    font-style: italic;
+    font-weight: lighter;
+    text-align: left;
+    
+
+}
+.black{
+    font-size: 174px;
+    font-family: 'IM Fell English', serif;
+    margin: 150px 0px 0px 53px;
+    font-weight: lighter;
+    text-align: left;
+    
+}
+
+.opis{
+    width: 650px;
+    text-align: left;
+    margin-left: 30px;
+    padding-top: 0px;
+    font-family: $font1;
+    font-size: 22px;
+    line-height: 36px;
+    font-weight: 500;
+    letter-spacing: -1px;
+}
+.opis2{
+    margin-left: 1040px;
+    margin-right: 390px;
+    margin-top: -100px;
+    font-family: $font2;
+    font-size: 26px;
+    font-weight: 400;
+    color: #CCC2B6;
+    text-align: left;
+}
+.text-span1{
+    text-decoration: line-through;
+}
+.text-span2{
+    text-decoration: line-through;
+}
+
+.button{
+    text-align: left;
+    margin-left: 25px;
+}
+
+.button1{
+    overflow: visible;
+    margin-top: 72px;
+    margin-left: 0px;
+    padding: 16px 32px;
+    background-color: #bc8417;
+    font-family: $font1;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+.button1:hover{
+    background-color: #0f0c07;
+}
+
+.button2{
+    overflow: visible;
+    margin-top: 72px;
+    margin-left: 16px;
+    padding: 14px 32px;
+    padding-right: 24px;
+    padding-left: 24px;
+    background-color: transparent;
+    font-family: $font1;
+    color: #000;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    text-decoration: none;
+    border-color: #0f0f0f;
+    cursor: pointer;
+}
+.button2:hover{
+    background-color: #0f0c07;
+    color: #fff;
+}
+
+.fotki{
+    text-align: center;
+    
+    margin-right: 100px;
+    z-index: 2;
+    position: relative;
+}
+
+.sign1{
+    margin: -78px 0px 0px 983px;
+    z-index: 2;
+    position: absolute;
+}
+.obraz1{
+    width: 570px;
+    height: 820px;
+    margin: 0 0 0 100px;
+    z-index: -1;
+    
+}
+.obraz2{
+    width: 570px;
+    height: 820px;
+    margin: 10px 0px 180px 60px;
+    z-index: 0;
+    position: relative;
+}
+.sign2{
+    margin: 250px 0px 0px 403px;
+    z-index: 0;
+    position: absolute;
+}
+
+li, a{
+    font-family: $font1;
+    font-weight: bold;
+    color: #0f0c07;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 9%;
+    margin-right: 80px;
+    
+}
+.logo{
+    cursor: pointer;
+    margin-left: 150px;
+
+}
+.nav-links{
+    list-style: none;
+    font-weight: 700;
+    
+}
+.nav-links li{
+    display: inline-block;
+    padding: 0px 20px;
+    
+    
+}
+
+.oferta-tytul{
+    font-family: 'IM Fell English', serif;
+    color: #BC8417;
+    font-size: 70px;
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: -1.5px;
+    text-align: center;
+    margin-top: 150px;
+}

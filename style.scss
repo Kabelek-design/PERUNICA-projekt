@@ -14,7 +14,7 @@ body{
     text-align: center;
 }
 .bg{
-    background-image: url(main-page/bg.png);
+    background-image: url(main-page/Background.png);
     height: 1325px;
     z-index: 2;
     position: relative;
@@ -26,12 +26,77 @@ body{
     background-color: #0F0C07;
     
 }
+
+.bok-prawy{
+    z-index: 3;
+    position: relative;
+}
+
+.dot1{
+    color: #BC8417;
+}
+
+.dot2{
+    color: #BC8417;
+}
+.odkryj-obraz{
+    z-index: 3;
+    position: absolute;
+    font-family: $font2;
+    font-weight: 400;
+    letter-spacing: -1.5px;
+    font-size: 157px;
+    margin-left: 1325px;
+    margin-top: 340px;
+    transform: rotate(-90deg);
+    color: rgba(0, 0, 0, 0.0);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #CCC2B6;
+}
+
+.korzen{
+    width: 93px;
+    height: 188px;
+    margin-top: 0px;
+    margin-bottom: -290px;
+    margin-left: 1150px;
+    z-index: 4;
+    position: relative;
+}
+
+.container{
+    background-color: #0F0C07;
+    padding: 0px;
+    z-index: 2;
+    position: relative;
+    bottom: 0px;
+    height: 1000px;
+}
+.container1 a{
+    position: relative;
+    bottom: 1000px;
+    padding: 0px 30px;
+}
+
+.photo-cont a{
+    position: relative;
+    bottom: 980px;
+    padding: 0px 30px;
+}
+
+.galazka2{
+    z-index: -1;
+    position: relative;
+    bottom: 360px;
+    left: 390px;
+    width: 631px;
+    height: 1000px;
+    transform: rotate(5deg);
+}
+
 .title{
     margin: 0px 0px 0px 295px;
     margin-top: -130px;
-    
-    
-    
 }
 .color{
     font-size: 110px;
@@ -58,6 +123,7 @@ body{
     width: 650px;
     text-align: left;
     margin-left: 30px;
+    margin-top: -0px;
     padding-top: 0px;
     font-family: $font1;
     font-size: 22px;
@@ -130,7 +196,6 @@ body{
 
 .fotki{
     text-align: center;
-    
     margin-right: 100px;
     z-index: 2;
     position: relative;
@@ -174,13 +239,13 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 9%;
-    margin-right: 80px;
+    padding: 30px 13%;
     
 }
 .logo{
     cursor: pointer;
-    margin-left: 150px;
+    position: relative;
+    left: 70px;
 
 }
 .nav-links{
@@ -194,7 +259,6 @@ header{
     
     
 }
-
 .oferta-tytul{
     font-family: 'IM Fell English', serif;
     color: #BC8417;
@@ -204,4 +268,40 @@ header{
     letter-spacing: -1.5px;
     text-align: center;
     margin-top: 150px;
+}
+
+
+.container2{
+    background-image: url(main-page/bg.png);
+    height: 1680px;
+    position: relative;
+    top: -30px;
+    padding: 0;
+}
+.dzieje{
+    color: #BC8417;
+    font-family: $font2;
+    font-style: italic;
+    font-size: 43px;
+    letter-spacing: -1.5px;
+    position: relative;
+    top: 270px;
+    font-weight: 400;
+
+}
+
+.update{
+    font-size: 70px;
+    letter-spacing: -3px;
+    font-family: $font2;
+    position: relative;
+    top: 220px;
+    font-weight: 400;
+}
+
+.fb-like{
+    position: relative;
+    top: 700px;
+    left: 70px;
+    text-align: center;
 }

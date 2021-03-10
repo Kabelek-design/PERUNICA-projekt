@@ -1,0 +1,52 @@
+body {
+    background: $body-background-color;
+    color: $foreground-color;
+    font-family: $any-pro;
+    font-size: 1.3em;
+  }
+
+header {
+    color: $caption-color;
+    text-align: center;
+    padding: 60px 30px 30px;
+    background-size: 160px;
+    min-width: 800px;
+    max-width: 100%;
+    margin: 20px auto;
+
+}
+
+main {
+    background: $foreground-color;
+    color: $black;
+    margin: 20px auto;
+    padding: 40px;
+    min-width: 800px;
+    max-width: 100%;
+    text-align: center;
+}
+
+.font-im-italic {
+    font-size: 2.2em;
+    font-style: italic;
+    letter-spacing: -1.5px;
+    font-family: $im-fe;
+    font-weight: 400;
+}
+
+footer {
+    min-width: 800px;
+    max-width: 100%;
+    text-align: center;
+    margin: 20px auto;
+    background-color: $footer-background-color;
+
+
+
+    .contact {
+        width: 700px;
+        background-color: red;
+        margin: 20px auto;
+    }
+
+  }

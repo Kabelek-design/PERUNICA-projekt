@@ -1,5 +1,5 @@
 body {
-    background: $body-background-color;
+    background: url("../images/design/page-bg.png") repeat $body-background-color;
     color: $foreground-color;
     font-family: $any-pro;
     font-size: 1.3em;
@@ -13,7 +13,6 @@ header {
     min-width: 800px;
     max-width: 100%;
     margin: 20px auto;
-
 }
 
 main {

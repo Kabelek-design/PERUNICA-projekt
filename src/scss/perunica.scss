@@ -71,11 +71,25 @@ main {
     font-family: $im-fe;
     font-weight: 400;
 }
+.font-im-italic2 {
+    font-size: 6.875em;
+    font-style: italic;
+    letter-spacing: -1.5px;
+    font-family: $im-fe;
+    font-weight: 400;
+}
 
 .font-im-regular {
     font-size: 2.2em;
     font-style: normal;
     letter-spacing: -1.5px;
+    font-family: $im-fe;
+    font-weight: 400;
+}
+.font-im-regular2 {
+    font-size: 11.0625em;
+    font-style: normal;
+    letter-spacing: -3px;
     font-family: $im-fe;
     font-weight: 400;
 }

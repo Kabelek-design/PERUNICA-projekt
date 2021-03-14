@@ -18,6 +18,7 @@ header {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 50px 1fr;
+    z-index: 5;
 }
 .navbar{
     ul{
@@ -54,7 +55,6 @@ main {
     url("../images/design/perun.jpg") ;
     background-repeat: no-repeat;
     background-position: 50% 0;
-    opacity: 0.6;
     color: $black;
     margin:20px auto;
     padding: 40px;
@@ -92,13 +92,20 @@ main {
     letter-spacing: -3px;
     font-family: $im-fe;
     font-weight: 400;
+    position: relative;
+    bottom: 80px;
+    left: 46px;
+}
+
+strong{
+    font-weight: 600;
 }
 
 footer {
     min-width: 800px;
     max-width: 100%;
     text-align: center;
-    margin: 20px auto;
+    margin: 0px auto;
     background-color: #070603;
 
 
@@ -119,3 +126,84 @@ footer, span{
 
   }
 
+
+.btn1{
+    overflow: visible;
+    padding: 14px 32px;
+    margin-top: 72px;
+    margin-left: 0px;
+    background-color: #BC8417;
+    color: #fff;
+    font-size: 1em;
+    border: 1px solid #BC8417;
+    font-weight: 600;
+    font-family: $any-pro;
+    letter-spacing: -0.5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btn1:hover{
+    background-color: #0f0c07;
+    border: 1px solid #0f0c07;
+}
+
+.btn2{
+    padding: 14px 32px;
+    padding-left: 24px;
+    margin-left: 16px;
+    margin-right: 24px;
+    background-color: transparent;
+    color: #000000;
+    font-family: $any-pro;
+    font-weight: bold;
+    border: 1px solid #0f0c07;
+    font-size: 1em;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btn2:hover{
+    background-color: #0f0c07;
+    color: #fff;
+}
+
+.korzen{
+    position: relative;
+    left: 1450px;
+    bottom: 640px;
+    z-index: 2;
+}
+
+.txt{
+    transform: rotate(-90deg);
+    position: relative;
+    left: 1200px;
+    bottom: 490px;
+    color: #CCC2B6;
+    letter-spacing: -1.5px;
+    font-family: $im-fe;
+    margin: 0;
+    padding: 0;
+    font-size: 9em;
+    color: rgba(0, 0, 0, 0.0);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #CCC2B6;
+}
+
+.obraz1{
+    position: relative;
+    z-index: 0;
+}
+.sing2{
+    position: relative;
+    z-index: 1;
+}
+.obraz2{
+    position: relative;
+    z-index: 2;
+}
+.sign1{
+    position: relative;
+    z-index: 3;
+}

@@ -27,7 +27,7 @@ header {
         height: 100%;
         margin: 0;
         padding: 0px;
-        grid-template-columns: 1fr 1fr 1.3fr 1fr 1fr 1fr 1fr 0.5fr 0.5fr 1fr 0.5fr 0.5fr ;
+        grid-template-columns: 0.3fr 0.5fr 0.6fr 0.5fr 0.5fr 0.5fr 0.2fr 0.2fr 0.5fr 0.2fr 0.2fr ;
         grid-template-rows: 1fr;
         align-items: center;
         justify-items: center;
@@ -77,6 +77,8 @@ main {
     letter-spacing: -1.5px;
     font-family: $im-fe;
     font-weight: 400;
+    color: #BC8417;
+    text-align: left;
 }
 
 .font-im-regular {
@@ -170,17 +172,18 @@ footer, span{
 
 .korzen{
     position: relative;
-    left: 1450px;
-    bottom: 640px;
-    z-index: 2;
+    left: 520px;
+    top: 40px;
+    z-index: 4;
 }
 
 .txt{
     transform: rotate(-90deg);
     position: relative;
-    left: 1200px;
-    bottom: 490px;
+    left: 178px;
+    top: 110px;
     color: #CCC2B6;
+    z-index: 3;
     letter-spacing: -1.5px;
     font-family: $im-fe;
     margin: 0;

@@ -64,6 +64,19 @@ main {
     z-index: 2;
 }
 
+.main1{
+    color: $black;
+    background-image: url("../images/content/galazka2-1.png");
+    background-repeat: no-repeat;
+    background-position: 90% 62%;
+    background-color: #0F0C07;
+    padding: 40px;
+    min-width: 10%;
+    max-width: 100%;
+    text-align: center;
+    z-index: 2;
+}
+
 .font-im-italic {
     font-size: 2.2em;
     font-style: italic;
@@ -194,31 +207,67 @@ footer, span{
     -webkit-text-stroke-color: #CCC2B6;
 }
 
+
+
 .main-image-left{
     position: absolute;
     z-index: 0;
     top: 150px;
+    left: 150px;
+    width: 570px;
+    height: 820px;
 }
 .main-image-right{
     position: absolute;
     z-index: 2;
     top: 0px;
-    left: 630px;
+    left: 615px;
+    width: 570px;
+    height: 820px;
 }
 .main-logo-center{
     position: absolute;
     z-index: 1;
-    top: 100px;
-    left: 330px;
+    top: 300px;
+    left: 385px;
 }
 .main-logo-over-right{
     position: absolute;
     z-index: 3;
-    top: -100px;
+    top: -90px;
     left: 780px;
+    height: 177px;
+    width: 123px;
 }
 
 .images-container{
     position: relative;
     height: 800px;
+}
+
+.pytam{
+    font-family: $im-fe;
+    color: white;
+    letter-spacing: -0.5px;
+    font-size: 1.625em;
+    font-weight: normal;
+    position: absolute;
+    padding-left: 880px;
+    padding-right: 400px;
+}
+
+.p{
+    color: #BC8417;
+}
+
+.images-container1{
+    position: relative;
+    height: 800px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    img{
+       padding: 0 40px 40px;
+       
+    }
 }

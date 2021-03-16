@@ -31,7 +31,7 @@ header {
         grid-template-rows: 1fr;
         align-items: center;
         justify-items: center;
-        
+
     }
     li{
         margin: 0px;
@@ -48,7 +48,7 @@ header {
     .nav-line{
         margin: 20px;
     }
-    
+
 }
 main {
     background-image:
@@ -194,31 +194,31 @@ footer, span{
     -webkit-text-stroke-color: #CCC2B6;
 }
 
-.obraz1{
-    width: 570px;
-    height: 820px;
+.main-image-left{
+    position: absolute;
     z-index: 0;
+    top: 150px;
 }
-.sing2{
-    width: 329px;
-    position: relative;
-    height: 327px;
-    z-index: 1;
-    right: 50px;
-}
-.obraz2{
-    width: 670px;
-    height: 820px;
+.main-image-right{
+    position: absolute;
     z-index: 2;
+    top: 0px;
+    left: 630px;
 }
-.sign1{
-    width: 123px;
-    height: 177px;
+.main-logo-center{
+    position: absolute;
+    z-index: 1;
+    top: 100px;
+    left: 330px;
+}
+.main-logo-over-right{
+    position: absolute;
     z-index: 3;
-    right: 50px;
+    top: -100px;
+    left: 780px;
 }
 
-.imgs{
-    display: flex;
+.images-container{
     position: relative;
+    height: 800px;
 }

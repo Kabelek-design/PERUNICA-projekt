@@ -195,18 +195,30 @@ footer, span{
 }
 
 .obraz1{
-    position: relative;
+    width: 570px;
+    height: 820px;
     z-index: 0;
 }
 .sing2{
+    width: 329px;
     position: relative;
+    height: 327px;
     z-index: 1;
+    right: 50px;
 }
 .obraz2{
-    position: relative;
+    width: 670px;
+    height: 820px;
     z-index: 2;
 }
 .sign1{
-    position: relative;
+    width: 123px;
+    height: 177px;
     z-index: 3;
+    right: 50px;
+}
+
+.imgs{
+    display: flex;
+    position: relative;
 }

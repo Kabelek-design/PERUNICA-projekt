@@ -22,18 +22,6 @@ header {
     
 }
 .navbar{
-    ul{
-        display: grid;
-        list-style-type: none;
-        height: 100%;
-        margin: 0;
-        padding: 0px;
-        grid-template-columns: 0.3fr 0.5fr 0.6fr 0.5fr 0.5fr 0.5fr 0.2fr 0.2fr 0.5fr 0.2fr 0.2fr ;
-        grid-template-rows: 1fr;
-        align-items: center;
-        justify-items: center;
-
-    }
     li{
         margin: 0px;
         padding: 0px;
@@ -50,6 +38,25 @@ header {
         margin: 20px;
     }
 
+}
+
+.navbar ul{
+    list-style-type: none;
+    height: 100%;
+    margin: 0;
+    padding: 0px;
+    float: right;
+}
+
+.navbar ul li{
+    display: inline-block;
+    padding: 0 1.5rem;
+    
+}
+
+.position-nav{
+    position: fixed;
+    z-index: 5;
 }
 main {
     background-image:
@@ -415,4 +422,31 @@ footer, span{
 
 .opis-odkryj{
     color: #000000;
+    text-align: left;
+    padding: 35px 210px 50px 0px;
+}
+
+.row-flex{
+    display: flex;
+}
+
+.runa-odkryj{
+    position: relative;
+    left: 40%;
+    bottom: 12.5%;
+}
+
+.carousel-cell {
+	width: 30%;
+}
+
+.carousel-cell img {
+	width: 100%;
+	height: auto;
+}
+
+/* Ensures that Flickity waits until CSS has loaded to calculate the height of the cells */
+.carousel:after {
+  content: 'flickity';
+  display: none; /* hide :after */
 }

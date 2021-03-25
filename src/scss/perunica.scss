@@ -61,7 +61,7 @@ header {
 .position-nav{
     position: fixed;
     z-index: 5;
-    padding-left: 12%;
+    padding-left: 10%;
 }
 main {
     background-image:
@@ -477,4 +477,55 @@ footer, span{
 
 .row-container{
     padding: 0 0 0 10%;
+}
+
+/* informacja turystyczna */
+
+.if-bg{
+    background-image: url(../images/content/if-bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 608px;
+}
+
+.if-row-bg{
+    background-color: #fff;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center;
+}
+
+.if-zwiedzanie{
+    background-image: url(../images/content/bg-welesowy.jpg);
+    background-repeat: no-repeat; height: 700px;
+}
+
+/* szlak kulinarny */
+
+.kulinarny-bg{
+    background-image: url(../images/content/szlak2-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 608px;
+}
+
+
+/* Team Building */
+
+.tb-bg{
+    background-image: url(../images/content/TB-bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 608px;
+}
+
+
+/* koło roku */
+
+.kolo-bg{
+    background-image: url(../images/content/kolo-bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 608px;
 }

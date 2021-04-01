@@ -77,18 +77,7 @@ main {
     z-index: 2;
 }
 
-.main1{
-    color: $black;
-    background-image: url("../images/content/galazka2-1.png");
-    background-repeat: no-repeat;
-    background-position: 90% 62%;
-    background-color: #0F0C07;
-    padding: 40px;
-    min-width: 10%;
-    max-width: 100%;
-    text-align: center;
-    z-index: 2;
-}
+
 
 .font-im-italic {
     font-size: 2.2em;
@@ -121,8 +110,9 @@ main {
     font-family: $im-fe;
     font-weight: 400;
     position: relative;
-    bottom: 80px;
-    left: 46px;
+    bottom: 9%;
+    left: 2%;
+    text-align: left;
 }
 
 strong{
@@ -198,18 +188,18 @@ footer, span{
 
 .korzen{
     position: relative;
-    left: 520px;
-    top: 40px;
     z-index: 4;
+    left: 57%;
+    bottom: 58%;
 }
 
 .txt{
     transform: rotate(-90deg);
     position: relative;
-    left: 178px;
-    top: 110px;
     color: #CCC2B6;
     z-index: 3;
+    left: 40%;
+    bottom: 50%;
     letter-spacing: -1.5px;
     font-family: $im-fe;
     margin: 0;
@@ -225,37 +215,43 @@ footer, span{
 .main-image-left{
     position: absolute;
     z-index: 0;
-    top: 150px;
-    left: 150px;
-    width: 570px;
-    height: 820px;
+    left: 10%;
+    top: 107%;
+
 }
 .main-image-right{
     position: absolute;
     z-index: 2;
-    top: 0px;
-    left: 615px;
-    width: 570px;
-    height: 820px;
+    left: 44%;
+    top: 90%;
+
 }
 .main-logo-center{
-    position: absolute;
+    position: relative;
     z-index: 1;
-    top: 300px;
-    left: 385px;
+    left: 26%;
+    bottom: 55%;  
+    
 }
 .main-logo-over-right{
     position: absolute;
     z-index: 3;
-    top: -90px;
-    left: 780px;
+    left: 55%;
+    top: 80.5%;
     height: 177px;
     width: 123px;
 }
 
-.images-container{
-    position: relative;
-    height: 800px;
+.main1{
+    color: $black;
+    background-color: #0F0C07;
+    min-width: 10%;
+    max-width: 100%;
+    text-align: center;
+    z-index: 2;
+    background-image: url(../images/content/galazka2-1.png);
+    background-repeat: no-repeat;
+    background-position: 76% 88%;
 }
 
 .pytam{
@@ -264,9 +260,8 @@ footer, span{
     letter-spacing: -0.5px;
     font-size: 1.625em;
     font-weight: normal;
-    position: absolute;
-    padding-left: 880px;
-    padding-right: 400px;
+    padding: 25% 28% 10% 10%;
+
 }
 
 .p{
@@ -274,10 +269,7 @@ footer, span{
 }
 
 .images-container1{
-    position: relative;
     height: 800px;
-    display: grid;
-    grid-template-columns: auto auto auto;
     
     img{
         padding: 0px 40px 40px;
@@ -288,80 +280,19 @@ footer, span{
     }
 }
 
-.main2{
-    margin: 80px;
-    padding-top: 80px;
-    padding-bottom: 80px;
-}
 
-.content{
-    position: relative;
-    z-index: 5;
-}
+
 .fb-like{
-    text-align: center;
+    justify-content: center;
+
+}
+
+.powr-facebook-feed{
+    padding: 0 10% 0 10%;
+
 }
 
 
-.img-cont{
-    position: relative;
-}
-
-.img1{
-    position: absolute;
-    z-index: 2;
-    top: -340px;
-    left: -140px;
-}
-.img2{
-    position: absolute;
-    z-index: 1;
-    left: 10px;
-}
-.img3{
-    position: absolute;
-    z-index: 1;
-    left: 1600px;
-    top: -90px;
-}
-.img4{
-    position: absolute;
-    z-index: 2;
-    left: 1400px;
-}
-
-.column {
-  float: inherit;
-  padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
-  min-width: 100px;
-}
-
-.left, .right {
-  width: 25%;
-}
-
-.middle {
-  width: 50%;
-  bottom: 140px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.welesowy{
-    padding: 20px 190px 80px 190px;
-}
-
-.welesowy-logo{
-    justify-self: center;
-    margin-left: 42%;
-    padding: 30px 0 30px;
-}
 
 .btn4{
     padding: 14px 32px;
@@ -377,6 +308,8 @@ footer, span{
     text-decoration: none;
     cursor: pointer;
     transition: 0.3s;
+    position: relative;
+    left: 23%;
 }
 
 .btn4:hover{
@@ -384,36 +317,7 @@ footer, span{
     background-color: #ee2e41;
 }
 
-.weles1{
-    position: relative;
-    left: 120px;
-    bottom: 130px;
-    z-index: 2;
-}
-.weles2{
-    position: relative;
-    left: 100px;
-    bottom: 120px;
-}
-.weles3{
-    position: relative;
-    bottom: 520px;
-    z-index: 3;
 
-}
-.bulwa{
-    position: relative;
-    right: 90px;
-    bottom: 250px;
-    z-index: 1;
-}
-
-.runa-red{
-    position: relative;
-    bottom: 150px;
-    left: 220px;
-
-}
 
 /* ODkryj */
 
@@ -529,3 +433,8 @@ footer, span{
     background-size: 100% 100%;
     height: 608px;
 }
+
+
+/*  <script src="https://www.powr.io/powr.js?platform=webflow"></script>
+                <div class="fb-like" data-href="https://www.facebook.com/perunica.sp.s" data-width="" data-layout="standard" data-action="like" data-size="small" data-share="false"></div>
+                */

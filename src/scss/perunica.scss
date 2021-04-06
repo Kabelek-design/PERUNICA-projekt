@@ -308,8 +308,6 @@ footer, span{
     text-decoration: none;
     cursor: pointer;
     transition: 0.3s;
-    position: relative;
-    left: 23%;
 }
 
 .btn4:hover{
@@ -401,8 +399,10 @@ footer, span{
 }
 
 .if-zwiedzanie{
-    background-image: url(../images/content/bg-welesowy.jpg);
-    background-repeat: no-repeat; height: 700px;
+    background-image: url(../images/content/bg-if.png);
+    background-repeat: no-repeat; 
+    height: 700px;
+    background-size: 100% 100%;   
 }
 
 /* szlak kulinarny */
@@ -435,6 +435,13 @@ footer, span{
 }
 
 
+
+
 /*  <script src="https://www.powr.io/powr.js?platform=webflow"></script>
                 <div class="fb-like" data-href="https://www.facebook.com/perunica.sp.s" data-width="" data-layout="standard" data-action="like" data-size="small" data-share="false"></div>
                 */
+
+
+
+/* Mobile */
+

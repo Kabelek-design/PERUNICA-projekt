@@ -6,19 +6,74 @@
     <title>Perunica</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Michał Gąsiorski">
 </head>
 
 <body> 
+    <div class="topnav" id="myTopnav">
+        <a href="#home"><img src="images/content/perunica-logo.png" alt="Logo perunicy"></a>
+        
+        <img src="images/content/text-size.png" alt="Powiększenie tekstu">
+        <img src="images/content/high-contrast.png" alt="Wysoki kontrast">
+        <a href="#home">Start</a>
+        <a href="#news">Odkryj Perunicę</a>
+        <a href="#contact">Oferta</a>
+        <a href="#about">Aktualności</a>
+        <a href="#about">Kontakt</a>
+            
+            <a href="https://www.facebook.com/perunica.sp.s"><img src="images/content/logo-fb-simple-gold.png" alt="">
+            <a href="https://www.instagram.com/perunica_byczyna/?hl=pl"><img src="images/content/logo-instagram-gold.png" alt=""></a>
+            
 
-    
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      
+      
+      <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+      </script>
+<div class="index-bg">
+    <div class="row">
+        <p class="font-im-italic" style="padding-left: 4%; text-align: left; font-size: 49px; letter-spacing: -1.5px; color: #BC8417;">Turystyka</p>
+        <p class="font-im-regular" style="padding-left: 10%; text-align: left; font-size: 62px; letter-spacing: -3px; color: black;">Doświadczeń</p>
+        <p class="opis-title">Jeśli nie chcesz być biernym obserwatorem, jeśli chcesz nie tylko <s>“być”</s> i <s>“dowiedzieć się”</s>, ale<strong> przeżyć,
+            zrozumieć</strong> i <strong>uczestniczyć</strong> to jesteśmy właśnie dla Ciebie!</p>
+    </div>
+    <div class="row">
+        <div class="col" style="display: flex; justify-content: space-between; padding-bottom: 50%;">
+        <button class="btn1-mobile">Poznaj ofertę</button><button class="btn2-mobile">Odkryj Perunicę</button>
+        </div>
+</div>
+<div class="row">
+    <img src="images/content/Mobile/main1.jpg" class="m1" alt="Ognisko z dziewczynami">
+    <img src="images/content/sign2.svg" class="m2" alt="Runa środkowa">
+    <img src="images/content/Mobile/main2.jpg" class="m3" alt="Trzy butelki i runy">
+    <img src="images/content/Mobile/sign1.svg" class="m4" alt="runa mniejsza">
 
+</div>
 
-    <p class="font-im-italic" style="text-align: left;">Turystyka</p>
-    <p class="font-im-regular" style="text-align: left;">Doświadczeń</p>
-
-
+<div class="col" style="background-color: #0f0c07; padding-top: 80%;">
+    <p class="pytam-mobile"><span class="p">“</span> Nie pytam dokąd chcesz jechać, ale kim chcesz być podczas podróży. <span class="p">”</span></p>
+    <p class="oferta-tytul">Oferta</p>
+        <div class="odnosniki">
+            <a href="#"><img src="images/content/Mobile/Group1.png" alt=""></a>
+            <a href="#"><img src="images/content/Mobile/Group2.png" alt=""></a>
+            <a href="#"><img src="images/content/Mobile/Group3.png" alt=""></a>
+            <a href="#"><img src="images/content/Mobile/Group4.png" alt=""></a>
+            <a href="#"><img src="images/content/Mobile/Group5.png" alt=""></a>
+        </div>
+</div>
 </body>
 
 </html>

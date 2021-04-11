@@ -287,10 +287,6 @@ footer, span{
 
 }
 
-.powr-facebook-feed{
-    padding: 0 10% 0 10%;
-
-}
 
 
 
@@ -314,6 +310,7 @@ footer, span{
     border-color: hsla(0, 0%, 100%, 0);
     background-color: #ee2e41;
 }
+
 
 
 
@@ -548,29 +545,29 @@ footer, span{
 }
 
 .m1{
-    position: absolute;
+    position: relative;
     z-index: 3;
-    top: 112.5%;
+    top: 11%;
     right: 0%;
 }
 .m2{
-    position: absolute;
+    position: relative;
     z-index: 2;
-    left: 30.5%;
-    top: 127%;
+    left: -10%;
+    top: 12%;
     width: 127px;
     height: 127px;
 }
 .m3{
-    position: absolute;
+    position: relative;
     z-index: 1;
-    right: 55%;
+    right: 5%;
 }
 .m4{
-    position: absolute;
+    position: relative;
     z-index: 3;
     right: 12%;
-    top: 106%;
+    top: 10%;
 }
 
 .pytam-mobile{
@@ -591,5 +588,88 @@ footer, span{
 
 .odnosniki{
     padding-top: 15%;
-    a { padding: 0; margin: 0}
+}
+
+.welesowy-bg{
+    background-image: url(../images/content/bg-welesowy.jpg);
+    background-repeat: no-repeat;
+    height: 1000px;
+}
+
+
+.center-img{
+    position: relative;
+    left: 25%;
+}
+
+.logo-weles{
+    
+    padding: 10%;
+}
+
+.img-1{
+    padding-top: 10%;
+}
+.img-2{
+    padding-top: 10%;
+}
+
+.img-3{
+    position: relative;
+    left: 40%;
+    bottom: 3.4%;
+}
+
+.footer-bg{
+    background-color: #070603;
+    height: 905px;
+    text-align: center;
+    padding-top: 70%;
+}
+
+.href{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 10% 30% 10% 30%;
+}
+
+
+
+.text-cont{
+    font-size: 15px;
+    text-align: left;
+    line-height: 24px;
+    span{
+        opacity: 50%;
+    }
+    padding: 10%;
+}
+
+.opis-1{
+    padding-top: 10%;
+}
+
+.footer-opis1{
+    font-size: 13px;
+    letter-spacing: -0.5px;
+    font-weight: 400;
+    padding-top: 5%;
+    span{
+        opacity: 50%;
+    }
+}
+
+.footer-opis2{
+    font-size: 13px;
+    letter-spacing: -0.5px;
+    font-weight: 400;
+    padding-top: 5%;
+    span{
+        opacity: 50%;
+    }
+    a{
+        text-decoration: none;
+        color: white;
+    }
 }

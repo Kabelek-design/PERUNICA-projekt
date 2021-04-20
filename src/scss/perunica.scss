@@ -874,6 +874,50 @@ footer, span{
     background-repeat: no-repeat;
 }
 
+.gfg {
+    position: relative;
+    padding-top: 10%;
+    text-align: center;
+}
+
+.first-txt {
+    position: absolute;
+    font-size: 42px;
+    margin: auto;
+    top: 15%;
+    left:0;
+    right:0;
+    bottom:0;
+    font-style: italic;
+    font-family: $im-fe;
+
+}
+
+.opis-kolo{
+    font-weight: 400;
+    line-height: 25px;
+    text-align: left;
+    padding: 5%;
+    font-size: 15px;
+    color: #000000;
+    letter-spacing: -1px;
+    background-color: rgba(255, 255, 255, 0.514);
+}
+
+
+#more{
+    display: none;
+}
+
+button{
+    background-color: rgba(255, 255, 255, 0.514);
+    border: none;
+    outline: none;
+    color: black;
+    font-size: 15px;
+    font-family: $any-pro;
+}
+
 
 /* Team building mobile */
 
@@ -974,6 +1018,7 @@ footer, span{
     cursor: pointer;
     transition: 0.3s;
     text-align: center;
+    margin-bottom: 25%;
 }
 
 .atrakcje.show-more .more-Text{
@@ -991,8 +1036,81 @@ footer, span{
 .opis-zwiedzanie{
     text-align: center;
     font-size: 16px;
+    letter-spacing: -0.5px;
+    line-height: 24px;
+    padding: 5%;
 }
 
-.img-zwiedzanie{
+.img-zwiedzanie1{
     position: relative;
+    z-index: 1;
+    padding-left: 5%;
+    margin-bottom: 5%;
 }
+.img-zwiedzanie2{
+    position: relative;
+    left: 40%;
+    z-index: 3;
+    bottom: 25%;
+}
+.img-zwiedzanie3{
+    position: relative;
+    z-index: 2;
+    left: 28%;
+    bottom: 33%;
+}
+
+.text-move{
+    position: relative;
+    bottom: 32%;
+}
+
+.btn-zwiedzanie{
+    overflow: visible;
+    padding: 14px 90px;
+    margin-top: 12px;
+    margin-left: 13px;
+    background-color: #BC8417;
+    color: #fff;
+    font-size: 1em;
+    border: 1px solid #BC8417;
+    font-weight: 600;
+    font-family: $any-pro;
+    letter-spacing: -0.5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.group{
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.info-mob{
+    padding: 10%;
+}
+
+.button-dol{
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.btn2-if-dol{
+    padding: 14px 32px;
+    padding-left: 24px;
+    margin-left: 16px;
+    margin-right: 24px;
+    background-color: transparent;
+    color: black;
+    font-family: $any-pro;
+    font-weight: bold;
+    border: 1px solid black;
+    font-size: 15px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+

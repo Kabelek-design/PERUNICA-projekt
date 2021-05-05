@@ -9,7 +9,7 @@ body {
     font-size: 1.3em;
     margin: 0;
     padding: 0;
-    
+
   }
 
 header {
@@ -23,8 +23,14 @@ header {
     grid-template-columns: 1fr;
     grid-template-rows: 50px 1fr;
     z-index: 999;
-    
+
 }
+
+.nav-link {
+    text-decoration: none;
+    color: black;
+}
+
 .navbar{
     li{
         margin: 0px;
@@ -33,10 +39,6 @@ header {
         font-weight: bold;
         letter-spacing: 0.5px;
 
-    }
-    a{
-    text-decoration: none;
-    color: black;
     }
     .nav-line{
         margin: 20px;
@@ -230,8 +232,8 @@ footer, span{
     position: relative;
     z-index: 1;
     left: 26%;
-    bottom: 55%;  
-    
+    bottom: 55%;
+
 }
 .main-logo-over-right{
     position: absolute;
@@ -270,13 +272,13 @@ footer, span{
 
 .images-container1{
     height: 800px;
-    
+
     img{
         padding: 0px 40px 40px;
         margin: auto;
         display: inline-block;
         vertical-align: middle;
-        
+
     }
 }
 
@@ -397,9 +399,9 @@ footer, span{
 
 .if-zwiedzanie{
     background-image: url(../images/content/bg-if.png);
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
     height: 700px;
-    background-size: 100% 100%;   
+    background-size: 100% 100%;
 }
 
 /* szlak kulinarny */
@@ -447,7 +449,7 @@ footer, span{
     background-color: #0F0C07;
     z-index: 99;
   }
-  
+
   .topnav a {
     display: block;
     color: #fff;
@@ -459,20 +461,20 @@ footer, span{
     text-decoration: none;
     font-size: 36px;
   }
-  
+
   .topnav a:hover {
     background-color: #ddd;
     color: black;
   }
-  
+
   .topnav a.active {
     color: transparent;
   }
-  
+
   .topnav .icon {
     display: none;
   }
-  
+
   @media screen and (max-width: 600px) {
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
@@ -480,7 +482,7 @@ footer, span{
       display: block;
     }
   }
-  
+
   @media screen and (max-width: 600px) {
     .topnav.responsive {position: relative;}
     .topnav.responsive .icon {
@@ -603,7 +605,7 @@ footer, span{
 }
 
 .logo-weles{
-    
+
     padding: 10%;
 }
 
@@ -681,7 +683,7 @@ footer, span{
     background-color: transparent;
     z-index: 99;
   }
-  
+
   .topnav-od a {
     display: block;
     color: #fff;
@@ -693,20 +695,20 @@ footer, span{
     text-decoration: none;
     font-size: 36px;
   }
-  
+
   .topnav-od a:hover {
     background-color: #ddd;
     color: black;
   }
-  
+
   .topnav-od a.active {
     color: transparent;
   }
-  
+
   .topnav-od .icon {
     display: none;
   }
-  
+
   @media screen and (max-width: 600px) {
     .topnav-od a:not(:first-child) {display: none;}
     .topnav-od a.icon {
@@ -714,7 +716,7 @@ footer, span{
       display: block;
     }
   }
-  
+
   @media screen and (max-width: 600px) {
     .topnav.responsive {position: relative;}
     .topnav.responsive .icon {
@@ -818,7 +820,7 @@ footer, span{
     padding-top: 10%;
 }
 
-/* szlak kulinarny mobile */ 
+/* szlak kulinarny mobile */
 
 .btn2-od{
     padding: 14px 32px;
@@ -929,7 +931,7 @@ button{
     background-repeat: no-repeat;
 }
 
-/* kontakt mobile */ 
+/* kontakt mobile */
 
 .kont-bg-mb{
     background-image: url(../images/content/kontakt-bg.jpg);

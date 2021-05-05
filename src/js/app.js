@@ -20,7 +20,7 @@ function scrollEvent(e) {
     var html = document.documentElement;
 
     var docHeight = Math.max(body.scrollHeight, body.offsetHeight,
-                           html.clientHeight, html.scrollHeight, html.offsetHeight);
+        html.clientHeight, html.scrollHeight, html.offsetHeight);
     var currentScroll = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
     // implement your logic according to requirement
     if (currentScroll > 1000) {
@@ -30,7 +30,6 @@ function scrollEvent(e) {
         $('.nav-link').css('color', 'black');
     }
 }
-
 
 /* Demo JS */
 import './demo.js';

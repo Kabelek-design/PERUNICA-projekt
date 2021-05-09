@@ -193,6 +193,16 @@ footer, span{
     z-index: 4;
     left: 57%;
     bottom: 58%;
+    -webkit-animation: action 1s infinite  alternate;
+    animation: action 1s infinite  alternate;
+    @-webkit-keyframes action {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(-10px); }
+    }
+    @keyframes action {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(-10px); }
+    }
 }
 
 .txt{
@@ -233,6 +243,16 @@ footer, span{
     z-index: 1;
     left: 26%;
     bottom: 55%;
+    -webkit-animation: action 1s infinite  alternate;
+    animation: action 1s infinite  alternate;
+    @-webkit-keyframes action {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(-10px); }
+    }
+    @keyframes action {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(-10px); }
+    }
 
 }
 .main-logo-over-right{
@@ -242,6 +262,32 @@ footer, span{
     top: 80.5%;
     height: 177px;
     width: 123px;
+    -webkit-animation: action 1s infinite  alternate;
+    animation: action 1s infinite  alternate;
+    @-webkit-keyframes action {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(-10px); }
+    }
+    @keyframes action {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(-10px); }
+    }
+}
+
+.bulwa{
+    position: relative;
+    bottom: 25%;
+
+    -webkit-animation: action 1s infinite  alternate;
+    animation: action 1s infinite  alternate;
+    @-webkit-keyframes action {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(-20px); }
+    }
+    @keyframes action {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(-20px); }
+    }
 }
 
 .main1{
@@ -280,8 +326,29 @@ footer, span{
         vertical-align: middle;
 
     }
+    img:hover {
+        -webkit-animation: action 1s;
+        animation: action 1s infinite  alternate;
+        -moz-transform: translate(0px, -4px);
+        -ms-transform: translate(0px, -4px);
+        -o-transform: translate(0px, -4px);
+        -webkit-transform: translate(0px, -4px);
+        transform: translate(0px, -4px)
+    }
 }
 
+.runa-mz{
+    -webkit-animation: action 1s infinite  alternate;
+    animation: action 1s infinite  alternate;
+    @-webkit-keyframes action {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(-20px); }
+    }
+    @keyframes action {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(-20px); }
+    }
+}
 
 
 .fb-like{
@@ -289,7 +356,17 @@ footer, span{
 
 }
 
-
+.img-ani{
+    img:hover {
+        -webkit-animation: action 1s;
+        animation: action 1s infinite  alternate;
+        -moz-transform: translate(0px, -4px);
+        -ms-transform: translate(0px, -4px);
+        -o-transform: translate(0px, -4px);
+        -webkit-transform: translate(0px, -4px);
+        transform: translate(0px, -4px)
+    }
+}
 
 
 .btn4{
@@ -340,6 +417,17 @@ footer, span{
     position: relative;
     left: 40%;
     bottom: 12.5%;
+
+    -webkit-animation: action 1s infinite  alternate;
+    animation: action 1s infinite  alternate;
+    @-webkit-keyframes action {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(-20px); }
+    }
+    @keyframes action {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(-20px); }
+    }
 }
 
 .carousel-cell {
@@ -374,6 +462,16 @@ footer, span{
     bottom: 5%;
     left: 72%;
     position: absolute;
+    -webkit-animation: action 1s infinite  alternate;
+    animation: action 1s infinite  alternate;
+    @-webkit-keyframes action {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(-20px); }
+    }
+    @keyframes action {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(-20px); }
+    }
 }
 
 .row-container{
@@ -620,6 +718,16 @@ footer, span{
     position: relative;
     left: 40%;
     bottom: 3.4%;
+    -webkit-animation: action 1s infinite  alternate;
+    animation: action 1s infinite  alternate;
+    @-webkit-keyframes action {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(-20px); }
+    }
+    @keyframes action {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(-20px); }
+    }
 }
 
 .footer-bg{
@@ -796,7 +904,25 @@ footer, span{
     width: 81px;
     height: 116px;
     left: 37%;
+    position: relative;
+    z-index: 2;
+    width: 81px;
+    height: 116px;
+    left: 37%;
+    -webkit-animation: action 1s infinite  alternate;
+    animation: action 1s infinite  alternate;
+    @-webkit-keyframes action {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(-20px); }
+    }
+    @keyframes action {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(-20px); }
+    }
+    
 }
+
+
 
 .carousel-cell-od {
 	width: 100%;
@@ -806,6 +932,7 @@ footer, span{
 	width: 100%;
 	height: auto;
 }
+
 
 /* Ensures that Flickity waits until CSS has loaded to calculate the height of the cells */
 .carousel-od:after {
@@ -944,6 +1071,16 @@ button{
 .galazka-mb{
     position: relative;
     left: 26%;
+    -webkit-animation: action 1s infinite  alternate;
+    animation: action 1s infinite  alternate;
+    @-webkit-keyframes action {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(-20px); }
+    }
+    @keyframes action {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(-20px); }
+    }
 }
 
 .cont-kont{
@@ -1054,6 +1191,16 @@ button{
     left: 40%;
     z-index: 3;
     bottom: 25%;
+    -webkit-animation: action 1s infinite  alternate;
+    animation: action 1s infinite  alternate;
+    @-webkit-keyframes action {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(-20px); }
+    }
+    @keyframes action {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(-20px); }
+    }
 }
 .img-zwiedzanie3{
     position: relative;

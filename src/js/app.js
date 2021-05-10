@@ -35,6 +35,66 @@ function scrollEvent(e) {
         $('#logo-instagram-black').show();
         $('.position-nav').css({"background-color":"rgba(0,0,0,0.0)"})
     }
+    if (currentScroll > 50) {
+        // change color here navbar a
+        $('.nav-link').css('color', 'white');
+        $('#logo-fb-white').show();
+        $('#logo-fb-black').hide();
+        $('.position-nav').css({"background-color":"rgba(0,0,0,0.8)"})
+    } else {
+        $('.nav-link').css('color', 'black');
+        $('#logo-fb-white').hide();
+        $('#logo-fb-black').show();
+        $('.position-nav').css({"background-color":"rgba(0,0,0,0.0)"})
+    }
+    if (currentScroll > 50) {
+        // change color here navbar a
+        $('.nav-link').css('color', 'white');
+        $('#line-white').show();
+        $('#line-black').hide();
+        $('.position-nav').css({"background-color":"rgba(0,0,0,0.8)"})
+    } else {
+        $('.nav-link').css('color', 'black');
+        $('#line-white').hide();
+        $('#line-black').show();
+        $('.position-nav').css({"background-color":"rgba(0,0,0,0.0)"})
+    }
+    if (currentScroll > 50) {
+        // change color here navbar a
+        $('.nav-link').css('color', 'white');
+        $('#line-white1').show();
+        $('#line-black1').hide();
+        $('.position-nav').css({"background-color":"rgba(0,0,0,0.8)"})
+    } else {
+        $('.nav-link').css('color', 'black');
+        $('#line-white1').hide();
+        $('#line-black1').show();
+        $('.position-nav').css({"background-color":"rgba(0,0,0,0.0)"})
+    }
+    if (currentScroll > 50) {
+        // change color here navbar a
+        $('.nav-link').css('color', 'white');
+        $('#text-size1').show();
+        $('#text-size').hide();
+        $('.position-nav').css({"background-color":"rgba(0,0,0,0.8)"})
+    } else {
+        $('.nav-link').css('color', 'black');
+        $('#text-size1').hide();
+        $('#text-size').show();
+        $('.position-nav').css({"background-color":"rgba(0,0,0,0.0)"})
+    }
+    if (currentScroll > 50) {
+        // change color here navbar a
+        $('.nav-link').css('color', 'white');
+        $('#contrast1').show();
+        $('#contrast').hide();
+        $('.position-nav').css({"background-color":"rgba(0,0,0,0.8)"})
+    } else {
+        $('.nav-link').css('color', 'black');
+        $('#contrast1').hide();
+        $('#contrast').show();
+        $('.position-nav').css({"background-color":"rgba(0,0,0,0.0)"})
+    }
 }
 
 /* Demo JS */

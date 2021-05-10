@@ -23,7 +23,7 @@ function scrollEvent(e) {
         html.clientHeight, html.scrollHeight, html.offsetHeight);
     var currentScroll = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
     // implement your logic according to requirement
-    if (currentScroll > 500) {
+    if (currentScroll > 50) {
         // change color here navbar a
         $('.nav-link').css('color', 'white');
     } else {

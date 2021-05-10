@@ -26,8 +26,14 @@ function scrollEvent(e) {
     if (currentScroll > 500) {
         // change color here navbar a
         $('.nav-link').css('color', 'white');
+        $('#logo-instagram-white').show();
+        $('#logo-instagram-black').hide();
+        $('.position-nav').css({"background-color":"rgba(0,0,0,0.8)"})
     } else {
         $('.nav-link').css('color', 'black');
+        $('#logo-instagram-white').hide();
+        $('#logo-instagram-black').show();
+        $('.position-nav').css({"background-color":"rgba(0,0,0,0.0)"})
     }
 }
 

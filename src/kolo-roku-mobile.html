@@ -9,15 +9,32 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Michał Gąsiorski">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav-od");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+      function l_readmore() {
+          $("#l-dots").hide();
+          $("#l-readmore").hide();
+          $("#l-more").show();
+      }
+    </script>
+
 </head>
 
-<body> 
+<body>
   <div class="kolo-bg-mb">
     <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v10.0&appId=807573393355980&autoLogAppEvents=1" nonce="kuRHmeLJ"></script>
   <div class="topnav-od" id="myTopnav-od">
       <a href="#home"><img src="images/content/perunica-logo.png" alt="Logo perunicy"></a>
-      
+
         <img src="images/content/text-size-white.png" alt="Powiększenie tekstu">
         <img src="images/content/high-contrast-white.png" alt="Wysoki kontrast">
         <a href="index-mobile.html">Start</a>
@@ -25,27 +42,17 @@
         <a href="index-mobile.html#oferta-mb">Oferta</a>
         <a href="#aktualnosci-mb">Aktualności</a>
         <a href="kontakt-mobile.html">Kontakt</a>
-          
+
           <a href="https://www.facebook.com/perunica.sp.s"><img src="images/content/logo-fb-simple-gold.png" alt="">
           <a href="https://www.instagram.com/perunica_byczyna/?hl=pl"><img src="images/content/logo-instagram-gold.png" alt=""></a>
-          
+
 
       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
         <i class="fa fa-bars"></i>
       </a>
     </div>
-    
-    
-    <script>
-    function myFunction() {
-      var x = document.getElementById("myTopnav-od");
-      if (x.className === "topnav") {
-        x.className += " responsive";
-      } else {
-        x.className = "topnav";
-      }
-    }
-    </script>
+
+
 
 
 
@@ -55,12 +62,13 @@
 <a href="index-mobile.html#oferta-mb"><button class="btn2-od">< Oferta</button></a>
 </div>
 
+
 <div class="col">
-  <p class="p-od">Rok kołem się toczy, a jego fragmenty oddzielone są od siebie przesileniami 
-    i równonocami, porami roku. 
-    Dni te od tysięcy lat świętowane są 
-    w różnych kulturach i religiach. 
-    Nasze eventy opieramy na autorskim kalendarzu, wiążącym święta słowiańskie, chrześcijańskie 
+  <p class="p-od">Rok kołem się toczy, a jego fragmenty oddzielone są od siebie przesileniami
+    i równonocami, porami roku.
+    Dni te od tysięcy lat świętowane są
+    w różnych kulturach i religiach.
+    Nasze eventy opieramy na autorskim kalendarzu, wiążącym święta słowiańskie, chrześcijańskie
     i celtyckie. </p>
   <p class="p-od">Jeśli poszukujesz dla siebie <strong>nowych form świętowania,</strong> wspólnotowych rytuałów, uczczenia czegoś, współtworzenia magicznych wydarzeń wywodzących się z polskiej i europejskiego folkloru to u nas na pewno znajdziesz coś dla siebie.</p>
 </div>
@@ -73,6 +81,7 @@
 <img class="runa" src="images/content/sign1.png" alt="runa">
 
 <div class="gfg">
+
   <img src="images/content/Mobile/kolo-roku(1).jpg">
   <h3 class="first-txt">
       Święto Świec
@@ -80,7 +89,7 @@
   <h4 class="opis-kolo">Święto Świec to pierwsze święto Koła Roku. Przypada w okolicach lutowego sabatu większego, który w
     tradycji polskiej obchodzony jest jako Matki Boskiej Gromnicznej (Gromnica). Święto to istnieje bardzo
     długo, w różnych religiach. Celtowie obchodzili je na cześć bogini Brigid, w starożytnym Rzymie
-    poprzedzało Luperkalia.<span id="dots">..</span><span id="more"> Początkiem roku konieczne było oczyszczenie przez ogień i wodę. Stąd zwyczaj
+    poprzedzało Luperkalia.<span id="l-dots">..</span><span id="l-more" style="display: none"> Początkiem roku konieczne było oczyszczenie przez ogień i wodę. Stąd zwyczaj
     święcenia przyniesionych do kościoła świec (gromnic). Gromnice miały moc chronienia przed piorunami,
     oświetlały drogę, domostwa ale także ostatnie chwile umierających. Gromnice chroniły też przed wilkami,
     co opisuje jedna z najpiękniejszych legend polskich: o Matce Boskiej Gromnicznej i wilku. Jedno jest
@@ -90,8 +99,9 @@
     Podczas eventu doświadczycie wszelkich sensualnych i dobroczynnych właściwości świec, przygotujecie
     je samodzielnie, uzyskacie wiedzę o aromaterapii, apiterapii, światłoterapii, medytacji. Będzie też okazja
     do zaopatrzenia się w wysokiej jakości produkty związane z wyżej wymienionymi dziedzinami.</span></h4>
-    <button type="button" id="read" onclick="read()">Cytaj więcej</button>
-    
+    <button id="l-readmore" onclick="l_readmore();">Czytaj więcej</button>
+
+
 </div>
 <div class="gfg">
   <img src="images/content/Mobile/kolo-roku(2).jpg">
@@ -106,7 +116,7 @@
     Kram Kwietny wokół tych tematów będzie krążył, a tematyka i wydarzenia współtowarzyszące zaskoczą
     Was wszystkich.</span></h4>
     <button type="button" id="read" onclick="read()">Cytaj więcej</button>
-    
+
 </div>
 <div class="gfg">
   <img src="images/content/Mobile/kolo-roku(3).jpg">
@@ -165,7 +175,7 @@
     wypożyczyć. <span id="dots">..</span><span id="more">Tematem przewodnim imprezy jest żywność obrzędowa. Mak, grzyby, zioła, wino, miód i
     chleb to produkty żywnościowe, które miały zapewniać łączność z zaświatami. Stąd ich obecność
     podczas kolacji wigilijnej czy wielkanocnej. Dziady zaś to wyjątkowy czas, rozpoczynający „ciemną
-    
+
     stronę roku”. Wigilia Święta zmarłych to zbiór obrzędów i rytuałów łączących ze światem zmarłych, a
     przebrania są zabiegiem magicznym, związanym z „odwracaniem uwagi”. Wszak „jeśli się ich boisz –
     przystąp do nich” mówi stare powiedzenie. Podczas eventu posłuchacie muzyki na żywo, posmakujecie
@@ -176,7 +186,7 @@
     <button type="button" id="read" onclick="read()">Cytaj więcej</button>
 </div>
 
-<script type="text/javascript">
+{{/* <script type="text/javascript">
   var i=0;
   function read(){
     if(!i){
@@ -187,7 +197,7 @@
     }
   }
 </script>
-
+ */}}
 
 
 <div class="footer-bg-od">
@@ -215,14 +225,14 @@
       </div>
     </div>
     <div class="row" style="max-width: 100%;">
-  
+
           <img src="images/content/line-1.jpg" alt="Line" style="width: 100%; height: 2px; color: white; opacity: 16%;"/>
   </div>
-  
+
   <div class="col">
     <p class="footer-opis1"><span>© 2021 </span>Perunica<span> - Wszelkie prawa zastrzeżone.</span></p>
     <p class="footer-opis2"><a href="https://jacekpuzio.pl" target="blank"><span>Projekt</span> jacekpuzio.pl</a></p>
-  
+
   </div>
 </body>
 

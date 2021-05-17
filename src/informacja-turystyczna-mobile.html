@@ -106,8 +106,9 @@
     <p><strong>Kościół ewangelicki</strong> św. Mikołaja, k. XIV w. </p>
   </div>
 
-<span class="moreText">
+<span id="dots-it"></span>
 
+<span id="content">
   <div class="atrakcje">
     <img src="images/content/icons/kosciol.png" alt="i w okręgu">
     <p><strong>Kościół</strong> pw. Świętej Trójcy, parafialny, w stylu barokowym </p>
@@ -165,20 +166,10 @@
     <p><strong>Kaplica</strong> ewangelicko-augsburska w Paruszowicach</p>
   </div>
 </span>
-  <button class="btn2-od-2">Wczytaj więcej</button>
 
-<script>
-  const readMoreBtn = document.querySelector('.btn2-od-2');
-  const text = document.querySelector('.atrakcje');
-  readMoreBtn.addEventListener('click',(e)=>{
-    atrakcje.classList.toggle('show-more')
-    if(readMoreBtn.innerText === 'Read More'){
-      readMoreBtn.innerText = 'Read Less';
-    }else{
-      readMoreBtn.innerText = 'Read More';
-    }
-  })
-</script>
+<button onclick="readMoreFunction()" id="buttonReadMore">Wczytaj wiecej</button>
+
+
 
 </div>
 

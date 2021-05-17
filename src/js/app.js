@@ -97,6 +97,21 @@ function scrollEvent(e) {
     }
 }
 
+function readMoreFunction() {
+    var dots = document.getElementById("dots-it");
+    var contentText = document.getElementById("content");
+    var btnText = document.getElementById("buttonReadMore");
+  
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "Wczytaj więcej";
+      contentText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "Pokaż mniej";
+      contentText.style.display = "inline";
+    }
+  }
 
 /* Demo JS */
 import './demo.js';

@@ -8,7 +8,8 @@ let multipleHtmlPlugins = htmlPageNames.map(name => {
   return new HtmlWebpackPlugin({
     template: `./src/${name}.html`, // relative path to the HTML files
     filename: `${name}.html`, // output HTML files
-    chunks: [`${name}`] // respective JS files
+    //chunks: [`${name}`], // respective JS files
+    inject: true
   })
 });
 

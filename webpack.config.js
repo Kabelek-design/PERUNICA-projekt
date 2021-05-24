@@ -3,7 +3,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 // let htmlPageNames = ['demo-index', 'index-mobile', 'informacja-turystyczna', 'informacja-turystyczna-mobile', 'kolo-roku', 'kolo-roku-mobile', 'kontakt', 'kontakt-mobile', 'odkryjperunice', 'odkryj-perunice-mobile', 'szlak-kulinarny', 'szlak-kulinarny-mobile', 'team-building', 'team-building-mobile'];
-let htmlPageNames = ['demo-index', 'index-mobile', 'informacja-turystyczna'];
+let htmlPageNames = ['demo-index', 'index-mobile', 'informacja-turystyczna', 'informacja-turystyczna-mobile'];
 let multipleHtmlPlugins = htmlPageNames.map(name => {
   return new HtmlWebpackPlugin({
     template: `./src/${name}.html`, // relative path to the HTML files

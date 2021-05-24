@@ -1,4 +1,4 @@
-import '../scss/app.scss';
+// import '../scss/app.scss';
 
 /* Your JS Code goes here */
 
@@ -10,6 +10,9 @@ function OnFirstLoad() {
     }
 
 }
+
+
+
 
 $(document).ready(function () {
     OnFirstLoad();
@@ -101,7 +104,7 @@ function readMoreFunction() {
     var dots = document.getElementById("dots-it");
     var contentText = document.getElementById("content");
     var btnText = document.getElementById("buttonReadMore");
-  
+
     if (dots.style.display === "none") {
       dots.style.display = "inline";
       btnText.innerHTML = "Wczytaj więcej";

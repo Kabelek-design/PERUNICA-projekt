@@ -13,7 +13,7 @@
 @import 'base/fonts';
 
 /* Mixins, helpers and functions */
-@import 'base/mixins';
+ @import 'base/mixins';
 
 /* Vendor */
 
@@ -22,7 +22,7 @@
 /* Browser specific styles */
 @import 'dirty/hacks';
 
-// @import 'node_modules/@drewbot/sass-flexbox-grid/public/sass-flexbox/scss/main.scss';
+@import 'node_modules/@drewbot/sass-flexbox-grid/public/sass-flexbox/scss/main.scss';
 
 //@import 'app';
 

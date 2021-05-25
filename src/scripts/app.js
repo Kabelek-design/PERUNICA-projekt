@@ -2,6 +2,8 @@
 
 /* Your JS Code goes here */
 
+console.log('test222');
+
 function OnFirstLoad() {
     if (document.attachEvent) {
         document.attachEvent('onscroll', scrollEvent);

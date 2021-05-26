@@ -19,10 +19,11 @@
           x.className = "topnav-od";
         }
       }
-      function l_readmore() {
-          $("#l-dots").hide();
-          $("#l-readmore").hide();
-          $("#l-more").show();
+      function readmore(sDots, sMore, sReadmore, ) {
+        console.log("#" + sDots);
+        $("#" + sDots).hide();
+        $("#" + sReadmore).hide();
+        $("#" + sMore).show();
       }
     </script>
 
@@ -92,7 +93,7 @@
   <h4 class="opis-kolo">Święto Świec to pierwsze święto Koła Roku. Przypada w okolicach lutowego sabatu większego, który w
     tradycji polskiej obchodzony jest jako Matki Boskiej Gromnicznej (Gromnica). Święto to istnieje bardzo
     długo, w różnych religiach. Celtowie obchodzili je na cześć bogini Brigid, w starożytnym Rzymie
-    poprzedzało Luperkalia.<span id="l-dots">..</span><span id="l-more" style="display: none"> Początkiem roku konieczne było oczyszczenie przez ogień i wodę. Stąd zwyczaj
+    poprzedzało Luperkalia.<span id="ss-dots">..</span><span id="ss-more" style="display: none"> Początkiem roku konieczne było oczyszczenie przez ogień i wodę. Stąd zwyczaj
     święcenia przyniesionych do kościoła świec (gromnic). Gromnice miały moc chronienia przed piorunami,
     oświetlały drogę, domostwa ale także ostatnie chwile umierających. Gromnice chroniły też przed wilkami,
     co opisuje jedna z najpiękniejszych legend polskich: o Matce Boskiej Gromnicznej i wilku. Jedno jest
@@ -102,7 +103,7 @@
     Podczas eventu doświadczycie wszelkich sensualnych i dobroczynnych właściwości świec, przygotujecie
     je samodzielnie, uzyskacie wiedzę o aromaterapii, apiterapii, światłoterapii, medytacji. Będzie też okazja
     do zaopatrzenia się w wysokiej jakości produkty związane z wyżej wymienionymi dziedzinami.</span></h4>
-    <button id="l-readmore" onclick="l_readmore();">Czytaj więcej</button>
+    <button id="ss-readmore" onclick="readmore('ss-dots', 'ss-more', 'ss-readmore');">Czytaj więcej</button>
 
 
 </div>
@@ -119,10 +120,10 @@
     jako Beltaine, Germanie jako Noc Walpurgii. Pełny rozkwit wiosny to czas drzew, kwiatów, nowalijek,
     młodych chwastów. To czas siewu, sadzenia, zbierania młodych liści i pędów. Kram organizujemy
     podczas weekendu majowego, kiedy to możecie przy okazji zwiedzić Byczynę i okolice, wziąć udział w
-    warsztatach rzemieślniczych, grze miejskiej.<span id="dots">..</span><span id="more">
+    warsztatach rzemieślniczych, grze miejskiej.<span id="kk-dots">..</span><span id="kk-more" style="display: none">
     Kram Kwietny wokół tych tematów będzie krążył, a tematyka i wydarzenia współtowarzyszące zaskoczą
     Was wszystkich.</span></h4>
-    <button type="button" id="read" onclick="read()">Cytaj więcej</button>
+    <button type="button" id="kk-readmore" onclick="readmore('kk-dots', 'kk-more', 'kk-readmore');">Czytaj więcej</button>
 
 </div>
 <div>
@@ -136,14 +137,14 @@
   </div>
   <h4 class="opis-kolo">Noc Świętojańska – Noc Kupały to najważniejsze święto naszego Koła Roku. Sabat Letniego Przesilenia
     to środek lata, pełnia rozkwitu natury, czas miłości. Podczas Nocy czcimy wszystkie żywioły. Ogień –
-    rozpaleniem ognisk, wodę – rytuałem wianków, ziemię – tańcem i powietrze – śpiewem. <span id="dots">..</span><span id="more">Cały event
+    rozpaleniem ognisk, wodę – rytuałem wianków, ziemię – tańcem i powietrze – śpiewem. <span id="ns-dots">..</span><span id="ns-more" style="display: none">Cały event
     odbywa się w klimatycznym miejscu w plenerze i okraszony jest muzyką, dobrym jedzeniem i
     odpowiednim wystrojem. W ramach pakietu dodatkowego będziecie mieć dostęp do Wiedźmiego
     Szałasu, gdzie czekają na Was: magiczny wyszynk, stylizowane stroje, możliwość aktywnego udziału w
     przygotowaniu rytuałów, kącinę wróżb, dostęp do balii i sauny ogrodowej, przekąski i słodkości
     przygotowane przez naszego Mistrza kuchni, ziołowe specyfiki Wiedźmy Dżoany, nocleg w namiotach
     Saxon.</span></h4>
-    <button type="button" id="read" onclick="read()">Cytaj więcej</button>
+    <button type="button" id="ns-readmore" onclick="readmore('ns-dots', 'ns-more', 'ns-readmore');">Czytaj więcej</button>
 </div>
 <div>
   <div class="container">
@@ -156,12 +157,12 @@
   </div>
   <h4 class="opis-kolo">Kram zielny organizujemy zawsze wraz ze świętem Matki Boskiej Zielnej. To piękne, chrześcijańskie
     święto łączy się z pogańskim kultem Wielkiej Bogini, słowiańskiej Mokoszy – uosobienia natury i jej
-    obfitości.<span id="dots">..</span><span id="more"> Obchodami Zielnej chcemy podziękować Ziemi za to że nas nosi, karmi i daje schronienie.
+    obfitości.<span id="kz-dots">..</span><span id="kz-more" style="display: none"> Obchodami Zielnej chcemy podziękować Ziemi za to że nas nosi, karmi i daje schronienie.
     Event ten łączy funkcje handlowe, rozrywkowe i edukacyjne. Towarzyszy mu muzyka na żywo,
     gotowanie live, możliwość spróbowania najrozmaitszych produktów lokalnych i regionalnych. Tematem
     przewodnim są zioła i kwiaty jadalne. Zioła pojawiają się na Kramie nie tylko w formie kulinarnej, ale
     także w formie kadzideł, kosmetyków, leków, ozdób, biżuterii czy produktów kolekcjonerskich.</span></h4>
-    <button type="button" id="read" onclick="read()">Cytaj więcej</button>
+    <button type="button" id="kz-readmore" onclick="readmore('kz-dots', 'kz-more', 'kz-readmore');">Czytaj więcej</button>
 </div>
 <div>
   <div class="container">
@@ -174,7 +175,7 @@
   </div>
   <h4 class="opis-kolo">Tradycyjne Dożynki chcemy świętować z Wami podczas naszego eventu, łączonego z Europejskimi
     Dniami Dziedzictwa (EDD). Jest to święto dziękczynne, etniczne, ludowe, obchodzone w okolicach
-    równonocy jesiennej.<span id="dots">..</span><span id="more">Nazwa Żniwniok pochodzi z naszych terenów czyli Śląska Opolskiego, ale ma też
+    równonocy jesiennej.<span id="z-dots'">..</span><span id="z-more" style="display: none">Nazwa Żniwniok pochodzi z naszych terenów czyli Śląska Opolskiego, ale ma też
     inne nazwy jak: Święto Plonów, Harvest Home, Mabon, Alban Elfed i jest bardzo starym świętem ludów
     Europy. Podczas Żniwnioka chcemy podzielić się zbiorami lata, rzemiosłem, trunkami aby zapewnić
     sobie przychylność na nowy rok. Zabawa Żniwniokowa ma charakter magiczny – zapewnia urodzaj na
@@ -182,7 +183,7 @@
     trunkach – miodach, winach, piwach czy innych wyjątkowych alkoholach wytwarzanych na terenie
     Opolszczyzny. Chcemy tym sposobem promować regionalne i lokalne produkty certyfikowane przez
     Europejską Sieć Regionalnego Dziedzictwa Kulinarnego.</span></h4>
-    <button type="button" id="read" onclick="read()">Cytaj więcej</button>
+    <button type="button" id="z-readmore" onclick="readmore('z-dots', 'z-more', 'z-readmore');">Czytaj więcej</button>
 </div>
 <div>
   <div class="container">
@@ -195,7 +196,7 @@
   </div>
   <h4 class="opis-kolo">Dziadowskie Party organizujemy od 2018 r. Jest to event, który przeniesie Was do świata słowiańskiej
     fantastyki. Nieodzownym elementem imprezy są przebrania, które będzie można wcześniej u nas
-    wypożyczyć. <span id="dots">..</span><span id="more">Tematem przewodnim imprezy jest żywność obrzędowa. Mak, grzyby, zioła, wino, miód i
+    wypożyczyć. <span id="dp-dots">..</span><span id="dp-more" style="display: none">Tematem przewodnim imprezy jest żywność obrzędowa. Mak, grzyby, zioła, wino, miód i
     chleb to produkty żywnościowe, które miały zapewniać łączność z zaświatami. Stąd ich obecność
     podczas kolacji wigilijnej czy wielkanocnej. Dziady zaś to wyjątkowy czas, rozpoczynający „ciemną
 
@@ -206,11 +207,8 @@
     ekscytującej oprawie i klimatycznym miejscu.
     Dziadowskie organizowane jest przy ograniczonej ilości uczestników, wymaga więc wcześniejszej
     rezerwacji.</span></h4>
-    <button type="button" id="read" onclick="read()">Cytaj więcej</button>
+    <button type="button" id="dp-readmore" onclick="readmore('dp-dots', 'dp-more', 'dp-readmore');">Czytaj więcej</button>
 </div>
-
-
-
 <br>
 <br>
 
@@ -246,7 +244,6 @@
   <div class="col">
     <p class="footer-opis1"><span>© 2021 </span>Perunica<span> - Wszelkie prawa zastrzeżone.</span></p>
     <p class="footer-opis2"><a href="https://jacekpuzio.pl" target="blank"><span>Projekt</span> jacekpuzio.pl</a></p>
-
   </div>
 </body>
 

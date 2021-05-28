@@ -2,7 +2,11 @@
 
 /* Your JS Code goes here */
 
-console.log('test222');
+
+function HighContrast() {
+    $('.nav-link').css('color', 'red');
+}
+
 
 function OnFirstLoad() {
     if (document.attachEvent) {
@@ -14,10 +18,10 @@ function OnFirstLoad() {
 }
 
 
-
-
 $(document).ready(function () {
     OnFirstLoad();
+    $('#contrast').click( function(){ HighContrast(); return false; } );
+
 });
 
 function scrollEvent(e) {

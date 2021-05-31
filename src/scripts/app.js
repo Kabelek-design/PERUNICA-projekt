@@ -5,18 +5,25 @@
 
 function HighContrast() {
     $('.nav-link').css('color', '#FFFF00');
+    $('.opis-title').css('color', '#FFFF00');
     $('.btn2').css('color', '#FFFF00');
     $('.btn4').css('color', '#FFFF00');
+    $('.btn2-mobile').css('color', '#FFFF00');
     $('.pytam').css('color', '#FFFF00');
+    $('.pytam-mobile').css('color', '#FFFF00');
     $('body').css('background-image','none');
+    $('.index-bg').css('background-image','none');
     $('main').css('background-image','none');
     $('.main1').css('background-image','none');
     $('.main1').css('background-color','#000');
+    $('.col').css('background-color','#000');
     $('body').css('background-color', '#000');
     $('.row').css('color', '#FFFF00');
     $('.font-im-regular').css('color', '#FFFF00');
     $('.row').css('background-color', '#000');
     $('text').css('color', '#FFFF00');
+    $('.footer-opis1').css('color', '#FFFF00');
+    $('.footer-opis2').css('color', '#FFFF00');
 }
 
 

@@ -4,9 +4,33 @@
 
 
 function HighContrast() {
-    $('.nav-link').css('color', 'red');
+    $('.nav-link').css('color', '#FFFF00');
+    $('.btn2').css('color', '#FFFF00');
+    $('.btn4').css('color', '#FFFF00');
+    $('.pytam').css('color', '#FFFF00');
+    $('body').css('background-image','none');
+    $('main').css('background-image','none');
+    $('.main1').css('background-image','none');
+    $('.main1').css('background-color','#000');
+    $('body').css('background-color', '#000');
+    $('.row').css('color', '#FFFF00');
+    $('.font-im-regular').css('color', '#FFFF00');
+    $('.row').css('background-color', '#000');
+    $('text').css('color', '#FFFF00');
 }
 
+
+function TextSize() {
+    $('.row').css('font-size', '1.5rem');
+    $('.col').css('font-size', '1.5rem');
+    $('footer').css('font-size', '1.5rem');
+}
+
+$(document).ready(function () {
+    OnFirstLoad();
+    $('#text-size').click( function(){ TextSize(); return false; } );
+
+});
 
 function OnFirstLoad() {
     if (document.attachEvent) {
@@ -14,9 +38,7 @@ function OnFirstLoad() {
     } else if (document.addEventListener) {
         document.addEventListener('scroll', scrollEvent, false);
     }
-
 }
-
 
 $(document).ready(function () {
     OnFirstLoad();

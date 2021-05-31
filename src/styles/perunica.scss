@@ -12,6 +12,12 @@ body {
 
   }
 
+  body.dark-theme {
+    --text-color: #FAF30D;
+    --bkg-color: #121212;
+  }
+
+
 header {
     color: $caption-color;
     padding: 60px 0px 0px 0px;

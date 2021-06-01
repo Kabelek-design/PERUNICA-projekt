@@ -2,6 +2,62 @@
 
 /* Your JS Code goes here */
 
+// remember original settings
+var cssValNavColor = $('.nav-link').css('color');
+var cssValOpisColor = $('.opis-title').css('color');
+var cssValBtn2Color = $('.btn2').css('color');
+var cssValBtn4Color = $('.btn4').css('color');
+var cssValBtn2ColorMobile = $('.btn2-mobile').css('color');
+var cssValPytamColor = $('.pytam').css('color');
+var cssValPytamColorMobile = $('.pytam-mobile').css('color');
+var cssValBodyImage = $('body').css('background-image');
+var cssValIndexImage = $('.index-bg').css('background-image');
+var cssValMainImage = $('main').css('background-image');
+var cssValMain1Image = $('.main1').css('background-image');
+var cssValMain1Color = $('.main1').css('background-color');
+var cssValColColor = $('.col').css('background-color');
+var cssValBodyColor = $('body').css('background-color');
+var cssValRowColor = $('.row').css('color');
+var cssValFontColor = $('.font-im-regular').css('color');
+var cssValRowColor = $('.row').css('background-color');
+var cssValTextColor = $('text').css('color');
+var cssValFooterColor = $('.footer-opis1').css('color');
+var cssValFooterColor = $('.footer-opis2').css('color');
+
+var cssTextRow = $('.row').css('font-size');
+var cssTextCol = $('.col').css('font-size');
+var cssTextFooter = $('footer').css('font-size');
+
+function HighText() {
+    $('.row').css('font-size', '1.5rem');
+    $('.col').css('font-size', '1.5rem');
+    $('footer').css('font-size', '1.5rem');
+}
+
+function NormalText() {
+    $('.row').css('font-size', cssTextRow);
+    $('.col').css('font-size', cssTextCol);
+    $('footer').css('font-size', cssTextFooter);
+}
+
+function LoadText() {
+    if (localStorage.getItem("highTextOn") == "true"){
+        HighText();
+    } else {
+        NormalText();
+    }
+}
+
+function SwitchText() {
+    if (localStorage.getItem("highTextOn") == "true"){
+        localStorage.setItem("highTextOn", false);
+        NormalText();
+    }
+    else {
+        localStorage.setItem("highTextOn", true);
+        HighText();
+    }
+}
 
 function HighContrast() {
     $('.nav-link').css('color', '#FFFF00');
@@ -24,20 +80,97 @@ function HighContrast() {
     $('text').css('color', '#FFFF00');
     $('.footer-opis1').css('color', '#FFFF00');
     $('.footer-opis2').css('color', '#FFFF00');
+
+    $('#contrast1').show();
+    $('#contrast').hide();
+    $('#text-size1').show();
+    $('#text-size').hide();
+
+    $('#logo-fb-white').show();
+    $('#logo-fb-black').hide();
+    $('#line-white').show();
+    $('#line-black').hide();
+    $('#line-white1').show();
+    $('#line-black1').hide();
+
+    // check if there is already pressed button
 }
 
+function NormalContrast() {
+    $('.nav-link').css('color', cssValNavColor);
+    $('.opis-title').css('color', cssValOpisColor);
+    $('.btn2').css('color', cssValBtn2Color);
+    $('.btn4').css('color', cssValBtn4Color);
+    $('.btn2-mobile').css('color', cssValBtn2ColorMobile);
+    $('.pytam').css('color', cssValPytamColor);
+    $('.pytam-mobile').css('color', cssValPytamColorMobile);
+    $('body').css('background-image', cssValBodyImage);
+    $('.index-bg').css('background-image', cssValIndexImage);
+    $('main').css('background-image', cssValMainImage);
+    $('.main1').css('background-image', cssValMain1Image);
+    $('.main1').css('background-color', cssValMain1Color);
+    $('.col').css('background-color', cssValColColor);
+    $('body').css('background-color', cssValBodyColor);
+    $('.row').css('color', cssValRowColor);
+    $('.font-im-regular').css('color', cssValFontColor);
+    $('.row').css('background-color', cssValRowColor);
+    $('text').css('color', cssValTextColor);
+    $('.footer-opis1').css('color', cssValFooterColor);
+    $('.footer-opis2').css('color', cssValFooterColor);
 
-function TextSize() {
-    $('.row').css('font-size', '1.5rem');
-    $('.col').css('font-size', '1.5rem');
-    $('footer').css('font-size', '1.5rem');
+
+    $('#text-size1').hide();
+    $('#text-size').show();
+    $('#contrast1').hide();
+    $('#contrast').show();
+
+    $('#logo-fb-white').hide();
+    $('#logo-fb-black').show();
+    $('#line-white').hide();
+    $('#line-black').show();
+    $('#line-white1').hide();
+    $('#line-black1').show();
+
+    var currentScroll = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
+    // implement your logic according to requirement
+    if (currentScroll > 50) {
+        // change color here navbar a
+        $('.nav-link').css('color', 'white');
+        $('#logo-instagram-white').show();
+        $('#logo-instagram-black').hide();
+        $('.position-nav').css({"background-color":"rgba(0,0,0,0.8)"})
+        $('#logo-fb-white').show();
+        $('#logo-fb-black').hide();
+        $('#line-white').show();
+        $('#line-black').hide();
+        $('#line-white1').show();
+        $('#line-black1').hide();
+        $('#text-size1').show();
+        $('#text-size').hide();
+        $('#contrast1').show();
+        $('#contrast').hide();
+    }
+
 }
 
-$(document).ready(function () {
-    OnFirstLoad();
-    $('#text-size').click( function(){ TextSize(); return false; } );
+function LoadContrast() {
+    if (localStorage.getItem("highContrastOn") == "true"){
+        HighContrast();
+    } else {
+        NormalContrast();
+    }
+}
 
-});
+function SwitchContrast() {
+    if (localStorage.getItem("highContrastOn") == "true"){
+        localStorage.setItem("highContrastOn", false);
+        NormalContrast();
+    }
+    else {
+        localStorage.setItem("highContrastOn", true);
+        HighContrast();
+    }
+}
 
 function OnFirstLoad() {
     if (document.attachEvent) {
@@ -49,8 +182,12 @@ function OnFirstLoad() {
 
 $(document).ready(function () {
     OnFirstLoad();
-    $('#contrast').click( function(){ HighContrast(); return false; } );
-
+    $('#contrast').click( function(){ SwitchContrast(); return false; } );
+    $('#text-size').click( function(){ SwitchText(); return false; } );
+    $('#contrast1').click( function(){ SwitchContrast(); return false; } );
+    $('#text-size1').click( function(){ SwitchText(); return false; } );
+    LoadContrast();
+    LoadText();
 });
 
 function scrollEvent(e) {
@@ -67,76 +204,35 @@ function scrollEvent(e) {
         $('#logo-instagram-white').show();
         $('#logo-instagram-black').hide();
         $('.position-nav').css({"background-color":"rgba(0,0,0,0.8)"})
-    } else {
-        $('.nav-link').css('color', 'black');
-        $('#logo-instagram-white').hide();
-        $('#logo-instagram-black').show();
-        $('.position-nav').css({"background-color":"rgba(0,0,0,0.0)"})
-    }
-    if (currentScroll > 50) {
-        // change color here navbar a
-        $('.nav-link').css('color', 'white');
         $('#logo-fb-white').show();
         $('#logo-fb-black').hide();
-        $('.position-nav').css({"background-color":"rgba(0,0,0,0.8)"})
-    } else {
-        $('.nav-link').css('color', 'black');
-        $('#logo-fb-white').hide();
-        $('#logo-fb-black').show();
-        $('.position-nav').css({"background-color":"rgba(0,0,0,0.0)"})
-    }
-    if (currentScroll > 50) {
-        // change color here navbar a
-        $('.nav-link').css('color', 'white');
         $('#line-white').show();
         $('#line-black').hide();
-        $('.position-nav').css({"background-color":"rgba(0,0,0,0.8)"})
-    } else {
-        $('.nav-link').css('color', 'black');
-        $('#line-white').hide();
-        $('#line-black').show();
-        $('.position-nav').css({"background-color":"rgba(0,0,0,0.0)"})
-    }
-    if (currentScroll > 50) {
-        // change color here navbar a
-        $('.nav-link').css('color', 'white');
         $('#line-white1').show();
         $('#line-black1').hide();
-        $('.position-nav').css({"background-color":"rgba(0,0,0,0.8)"})
-    } else {
-        $('.nav-link').css('color', 'black');
-        $('#line-white1').hide();
-        $('#line-black1').show();
-        $('.position-nav').css({"background-color":"rgba(0,0,0,0.0)"})
-    }
-    if (currentScroll > 50) {
-        // change color here navbar a
-        $('.nav-link').css('color', 'white');
         $('#text-size1').show();
         $('#text-size').hide();
-        $('.position-nav').css({"background-color":"rgba(0,0,0,0.8)"})
-    } else {
-        $('.nav-link').css('color', 'black');
-        $('#text-size1').hide();
-        $('#text-size').show();
-        $('.position-nav').css({"background-color":"rgba(0,0,0,0.0)"})
-    }
-    if (currentScroll > 50) {
-        // change color here navbar a
-        $('.nav-link').css('color', 'white');
         $('#contrast1').show();
         $('#contrast').hide();
-        $('.position-nav').css({"background-color":"rgba(0,0,0,0.8)"})
     } else {
-        $('.nav-link').css('color', 'black');
-        $('#contrast1').hide();
-        $('#contrast').show();
-        $('.position-nav').css({"background-color":"rgba(0,0,0,0.0)"})
+        if (localStorage.getItem("highContrastOn") == "false"){
+            $('.nav-link').css('color', 'black');
+            $('#logo-instagram-white').hide();
+            $('#logo-instagram-black').show();
+            $('.position-nav').css({"background-color":"rgba(0,0,0,0.0)"})
+            $('#logo-fb-white').hide();
+            $('#logo-fb-black').show();
+            $('#line-white').hide();
+            $('#line-black').show();
+            $('#line-white1').hide();
+            $('#line-black1').show();
+            $('#text-size1').hide();
+            $('#text-size').show();
+            $('#contrast1').hide();
+            $('#contrast').show();
+        }
     }
 }
-
-
-
 
 
 /* Demo JS */

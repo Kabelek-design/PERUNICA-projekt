@@ -24,6 +24,13 @@ function HighContrast() {
     $('text').css('color', '#FFFF00');
     $('.footer-opis1').css('color', '#FFFF00');
     $('.footer-opis2').css('color', '#FFFF00');
+    $('#contrast1').show();
+    $('#logo-instagram-white').show();
+    $('#logo-fb-white').show();
+    $('#line-white').show();
+    $('#line-white1').show();
+    $('#text-size1').show();
+    $('#contrast1').show();
 }
 
 

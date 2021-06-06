@@ -3,6 +3,7 @@
 /* Your JS Code goes here */
 
 // remember original settings
+
 var cssValNavColor = $('.nav-link').css('color');
 var cssValOpisColor = $('.opis-title').css('color');
 var cssValBtn2Color = $('.btn2').css('color');
@@ -17,9 +18,9 @@ var cssValMain1Image = $('.main1').css('background-image');
 var cssValMain1Color = $('.main1').css('background-color');
 var cssValColColor = $('.col').css('background-color');
 var cssValBodyColor = $('body').css('background-color');
-var cssValRowColor = $('.row').css('color');
+// var cssValRowColor = $('.row').css('color');
 var cssValFontColor = $('.font-im-regular').css('color');
-var cssValRowColorbk = $('.row').css('background-color');
+// var cssValRowColorbk = $('.row').css('background-color');
 var cssValTextColor = $('text').css('color');
 var cssValFooterColor = $('.footer-opis1').css('color');
 var cssValFooterColor = $('.footer-opis2').css('color');
@@ -27,6 +28,7 @@ var cssValFooterColor = $('.footer-opis2').css('color');
 var cssTextRow = $('.row').css('font-size');
 var cssTextCol = $('.col').css('font-size');
 var cssTextFooter = $('footer').css('font-size');
+
 
 function HighText() {
     $('.row').css('font-size', '1.5rem');
@@ -74,9 +76,9 @@ function HighContrast() {
     $('.main1').css('background-color', '#000');
     $('.col').css('background-color', '#000');
     $('body').css('background-color', '#000');
-    $('.row').css('color', '#FFFF00');
-    $('.font-im-regular').css('color', '#FFFF00');
-    $('.row').css('background-color', '#000');
+    //$('.row').css('color', '#FFFF00');
+    $('.font-im-regular2').css('color', '#FFFF00');
+    //$('.row').css('background-color', '#000');
     $('text').css('color', '#FFFF00');
     $('.footer-opis1').css('color', '#FFFF00');
     $('.footer-opis2').css('color', '#FFFF00');
@@ -111,9 +113,9 @@ function NormalContrast() {
     $('.main1').css('background-color', cssValMain1Color);
     $('.col').css('background-color', cssValColColor);
     $('body').css('background-color', cssValBodyColor);
-    $('.row').css('color', cssValRowColor);
-    $('.font-im-regular').css('color', cssValFontColor);
-    $('.row').css('background-color', cssValRowColorbk);
+    // $('.row').css('color', cssValRowColor);
+    $('.font-im-regular2').css('color', cssValFontColor);
+     //$('.row').css('background-color', cssValRowColorbk);
     $('text').css('color', cssValTextColor);
     $('.footer-opis1').css('color', cssValFooterColor);
     $('.footer-opis2').css('color', cssValFooterColor);
@@ -170,22 +172,22 @@ function NormalContrast() {
 }
 
 function LoadContrast() {
-    if (localStorage.getItem("highContrastOn") == "true") {
-        HighContrast();
-    } else {
-        NormalContrast();
-    }
+    // if (localStorage.getItem("highContrastOn") == "true") {
+    //     HighContrast();
+    // } else {
+    //     NormalContrast();
+    // }
 }
 
 function SwitchContrast() {
-    if (localStorage.getItem("highContrastOn") == "true") {
-        localStorage.setItem("highContrastOn", false);
-        NormalContrast();
-    }
-    else {
-        localStorage.setItem("highContrastOn", true);
-        HighContrast();
-    }
+    // if (localStorage.getItem("highContrastOn") == "true") {
+    //     localStorage.setItem("highContrastOn", false);
+    //     NormalContrast();
+    // }
+    // else {
+    //     localStorage.setItem("highContrastOn", true);
+    //     HighContrast();
+    // }
 }
 
 function OnFirstLoad() {
@@ -226,7 +228,7 @@ $(document).ready(function () {
     $('#nav-menu-mobile').click(function () { navMenu(); return false; });
     $('#nav-menu-mobile-blackbelt').click(function () { navMenuWithBlackBelt(); return false; });
 
-    LoadContrast();
+    // LoadContrast();
     // LoadText();
 });
 
@@ -258,20 +260,20 @@ function scrollEvent(e) {
         $('#contrast').hide();
     } else {
         if (localStorage.getItem("highContrastOn") == "false") {
-            $('.nav-link').css('color', 'black');
-            $('#logo-instagram-white').hide();
-            $('#logo-instagram-black').show();
-            $('.position-nav').css({ "background-color": "rgba(0,0,0,0.0)" })
-            $('#logo-fb-white').hide();
-            $('#logo-fb-black').show();
-            $('#line-white').hide();
-            $('#line-black').show();
-            $('#line-white1').hide();
-            $('#line-black1').show();
-            $('#text-size1').hide();
-            $('#text-size').show();
-            $('#contrast1').hide();
-            $('#contrast').show();
+            // $('.nav-link').css('color', 'black');
+            // $('#logo-instagram-white').hide();
+            // $('#logo-instagram-black').show();
+            // $('.position-nav').css({ "background-color": "rgba(0,0,0,0.0)" })
+            // $('#logo-fb-white').hide();
+            // $('#logo-fb-black').show();
+            // $('#line-white').hide();
+            // $('#line-black').show();
+            // $('#line-white1').hide();
+            // $('#line-black1').show();
+            // $('#text-size1').hide();
+            // $('#text-size').show();
+            // $('#contrast1').hide();
+            // $('#contrast').show();
         }
     }
 }

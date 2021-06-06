@@ -398,6 +398,26 @@ footer, span{
     background-color: #ee2e41;
 }
 
+.btn5{
+    padding: 14px 32px;
+    padding-left: 24px;
+    margin-left: 16px;
+    margin-right: 24px;
+    background-color: transparent;
+    color: #000;
+    font-family: $any-pro;
+    font-weight: 400;
+    border: 1px solid #000;
+    font-size: 1em;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn5:hover{
+    border-color: hsla(0, 0%, 100%, 0);
+    background-color: #ee2e41;
+}
 
 
 

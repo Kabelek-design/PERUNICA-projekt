@@ -9,6 +9,7 @@ let multipleHtmlPlugins = htmlPageNames.map(name => {
     template: `./src/${name}.html`, // relative path to the HTML files
     filename: `${name}.html`, // output HTML files
     //chunks: [`${name}`], // respective JS files
+    favicon: './src/images/favicon.ico',
     inject: true
   })
 });
@@ -18,7 +19,8 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/index.html',
-      filename: './index.html'
+      filename: './index.html',
+      favicon: './src/images/favicon.ico'
     }),
     new MiniCssExtractPlugin({
       filename: '[name].css',

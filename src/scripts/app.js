@@ -133,7 +133,7 @@ function NormalContrast() {
 
     var currentScroll = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
     // implement your logic according to requirement
-    if (currentScroll > 50) {
+    if (currentScroll > 500) {
         // change color here navbar a
         $('.nav-link').css('color', 'white');
         $('#logo-instagram-white').show();
@@ -149,6 +149,22 @@ function NormalContrast() {
         $('#text-size').hide();
         $('#contrast1').show();
         $('#contrast').hide();
+    } else {
+        $('.nav-link').css('color', 'black');
+        $('#logo-instagram-white').hide();
+        $('#logo-instagram-black').show();
+        $('.position-nav').css({ "background-color": "rgba(0,0,0,0.0)" })
+        $('#logo-fb-white').hide();
+        $('#logo-fb-black').show();
+        $('#line-white').hide();
+        $('#line-black').show();
+        $('#line-white1').hide();
+        $('#line-black1').show();
+        $('#text-size1').hide();
+        $('#text-size').show();
+        $('#contrast1').hide();
+        $('#contrast').show();
+
     }
 
 }
@@ -224,7 +240,7 @@ function scrollEvent(e) {
         html.clientHeight, html.scrollHeight, html.offsetHeight);
     var currentScroll = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
     // implement your logic according to requirement
-    if (currentScroll > 50) {
+    if (currentScroll > 500) {
         // change color here navbar a
         $('.nav-link').css('color', 'white');
         $('#logo-instagram-white').show();

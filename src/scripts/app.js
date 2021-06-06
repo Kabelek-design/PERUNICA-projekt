@@ -181,13 +181,25 @@ function OnFirstLoad() {
 }
 
 function navMenu() {
-    var x = document.getElementById("myTopnav");
+    var x = document.getElementById("topNav");
+    if (x.className === "topnav-od") {
+        x.className += " responsive";
+        $('.topnav-od').css('background-color', '#0F0C07');
+    } else {
+        x.className = "topnav-od";
+        $('.topnav-od').css('background-color', 'transparent');
+    }
+}
+
+function navMenuWithBlackBelt() {
+    var x = document.getElementById("topNav");
     if (x.className === "topnav") {
         x.className += " responsive";
     } else {
         x.className = "topnav";
     }
 }
+
 
 $(document).ready(function () {
     OnFirstLoad();
@@ -196,6 +208,7 @@ $(document).ready(function () {
     $('#contrast1').click(function () { SwitchContrast(); return false; });
     $('#text-size1').click(function () { SwitchText(); return false; });
     $('#nav-menu-mobile').click(function () { navMenu(); return false; });
+    $('#nav-menu-mobile-blackbelt').click(function () { navMenuWithBlackBelt(); return false; });
 
     LoadContrast();
     // LoadText();

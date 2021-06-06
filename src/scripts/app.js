@@ -19,7 +19,7 @@ var cssValColColor = $('.col').css('background-color');
 var cssValBodyColor = $('body').css('background-color');
 var cssValRowColor = $('.row').css('color');
 var cssValFontColor = $('.font-im-regular').css('color');
-var cssValRowColor = $('.row').css('background-color');
+var cssValRowColorbk = $('.row').css('background-color');
 var cssValTextColor = $('text').css('color');
 var cssValFooterColor = $('.footer-opis1').css('color');
 var cssValFooterColor = $('.footer-opis2').css('color');
@@ -113,7 +113,7 @@ function NormalContrast() {
     $('body').css('background-color', cssValBodyColor);
     $('.row').css('color', cssValRowColor);
     $('.font-im-regular').css('color', cssValFontColor);
-    $('.row').css('background-color', cssValRowColor);
+    $('.row').css('background-color', cssValRowColorbk);
     $('text').css('color', cssValTextColor);
     $('.footer-opis1').css('color', cssValFooterColor);
     $('.footer-opis2').css('color', cssValFooterColor);
@@ -187,7 +187,7 @@ $(document).ready(function () {
     $('#contrast1').click( function(){ SwitchContrast(); return false; } );
     $('#text-size1').click( function(){ SwitchText(); return false; } );
     LoadContrast();
-    LoadText();
+    // LoadText();
 });
 
 function scrollEvent(e) {

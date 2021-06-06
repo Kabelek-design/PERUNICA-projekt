@@ -41,7 +41,7 @@ function NormalText() {
 }
 
 function LoadText() {
-    if (localStorage.getItem("highTextOn") == "true"){
+    if (localStorage.getItem("highTextOn") == "true") {
         HighText();
     } else {
         NormalText();
@@ -49,7 +49,7 @@ function LoadText() {
 }
 
 function SwitchText() {
-    if (localStorage.getItem("highTextOn") == "true"){
+    if (localStorage.getItem("highTextOn") == "true") {
         localStorage.setItem("highTextOn", false);
         NormalText();
     }
@@ -67,12 +67,12 @@ function HighContrast() {
     $('.btn2-mobile').css('color', '#FFFF00');
     $('.pytam').css('color', '#FFFF00');
     $('.pytam-mobile').css('color', '#FFFF00');
-    $('body').css('background-image','none');
-    $('.index-bg').css('background-image','none');
-    $('main').css('background-image','none');
-    $('.main1').css('background-image','none');
-    $('.main1').css('background-color','#000');
-    $('.col').css('background-color','#000');
+    $('body').css('background-image', 'none');
+    $('.index-bg').css('background-image', 'none');
+    $('main').css('background-image', 'none');
+    $('.main1').css('background-image', 'none');
+    $('.main1').css('background-color', '#000');
+    $('.col').css('background-color', '#000');
     $('body').css('background-color', '#000');
     $('.row').css('color', '#FFFF00');
     $('.font-im-regular').css('color', '#FFFF00');
@@ -138,7 +138,7 @@ function NormalContrast() {
         $('.nav-link').css('color', 'white');
         $('#logo-instagram-white').show();
         $('#logo-instagram-black').hide();
-        $('.position-nav').css({"background-color":"rgba(0,0,0,0.8)"})
+        $('.position-nav').css({ "background-color": "rgba(0,0,0,0.8)" })
         $('#logo-fb-white').show();
         $('#logo-fb-black').hide();
         $('#line-white').show();
@@ -154,7 +154,7 @@ function NormalContrast() {
 }
 
 function LoadContrast() {
-    if (localStorage.getItem("highContrastOn") == "true"){
+    if (localStorage.getItem("highContrastOn") == "true") {
         HighContrast();
     } else {
         NormalContrast();
@@ -162,7 +162,7 @@ function LoadContrast() {
 }
 
 function SwitchContrast() {
-    if (localStorage.getItem("highContrastOn") == "true"){
+    if (localStorage.getItem("highContrastOn") == "true") {
         localStorage.setItem("highContrastOn", false);
         NormalContrast();
     }
@@ -180,15 +180,28 @@ function OnFirstLoad() {
     }
 }
 
+function navMenu() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+
 $(document).ready(function () {
     OnFirstLoad();
-    $('#contrast').click( function(){ SwitchContrast(); return false; } );
-    $('#text-size').click( function(){ SwitchText(); return false; } );
-    $('#contrast1').click( function(){ SwitchContrast(); return false; } );
-    $('#text-size1').click( function(){ SwitchText(); return false; } );
+    $('#contrast').click(function () { SwitchContrast(); return false; });
+    $('#text-size').click(function () { SwitchText(); return false; });
+    $('#contrast1').click(function () { SwitchContrast(); return false; });
+    $('#text-size1').click(function () { SwitchText(); return false; });
+    $('#nav-menu-mobile').click(function () { navMenu(); return false; });
+
     LoadContrast();
     // LoadText();
 });
+
+
 
 function scrollEvent(e) {
     var body = document.body
@@ -203,7 +216,7 @@ function scrollEvent(e) {
         $('.nav-link').css('color', 'white');
         $('#logo-instagram-white').show();
         $('#logo-instagram-black').hide();
-        $('.position-nav').css({"background-color":"rgba(0,0,0,0.8)"})
+        $('.position-nav').css({ "background-color": "rgba(0,0,0,0.8)" })
         $('#logo-fb-white').show();
         $('#logo-fb-black').hide();
         $('#line-white').show();
@@ -215,11 +228,11 @@ function scrollEvent(e) {
         $('#contrast1').show();
         $('#contrast').hide();
     } else {
-        if (localStorage.getItem("highContrastOn") == "false"){
+        if (localStorage.getItem("highContrastOn") == "false") {
             $('.nav-link').css('color', 'black');
             $('#logo-instagram-white').hide();
             $('#logo-instagram-black').show();
-            $('.position-nav').css({"background-color":"rgba(0,0,0,0.0)"})
+            $('.position-nav').css({ "background-color": "rgba(0,0,0,0.0)" })
             $('#logo-fb-white').hide();
             $('#logo-fb-black').show();
             $('#line-white').hide();
@@ -235,5 +248,8 @@ function scrollEvent(e) {
 }
 
 
-/* Demo JS */
-import './demo.js';
+const perunica = () => 'Perunica version 1.0.0';
+
+// eslint-disable-next-line no-console
+console.log(perunica());
+

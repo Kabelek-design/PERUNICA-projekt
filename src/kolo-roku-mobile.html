@@ -10,34 +10,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Michał Gąsiorski">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script>
-      function clickHamburger() {
-        var x = document.getElementById("myTopnav-od");
-        if (x.className === "topnav-od") {
-          x.className += " responsive";
-        } else {
-          x.className = "topnav-od";
-        }
-      }
-      function readmore(sDots, sMore, sReadmore, ) {
-        console.log("#" + sDots);
-        $("#" + sDots).hide();
-        $("#" + sReadmore).hide();
-        $("#" + sMore).show();
-      }
-    </script>
-
 </head>
 
 <body>
   <div class="kolo-bg-mb">
     <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v10.0&appId=807573393355980&autoLogAppEvents=1" nonce="kuRHmeLJ"></script>
-  <div class="topnav-od" id="myTopnav-od">
+  <div class="topnav-od" id="myTopnav">
       <a href="index-mobile.html"><img src="images/content/perunica-logo.png" alt="Logo perunicy"></a>
 
-        
-        
+
+
         <a href="index-mobile.html">Start</a>
         <a href="odkryj-perunice-mobile.html">Odkryj Perunicę</a>
         <a href="index-mobile.html#oferta-mb">Oferta</a>
@@ -52,10 +35,6 @@
         <i class="fa fa-bars"></i>
       </a>
     </div>
-
-
-
-
 
 
 <p class="font-im-italic" style="color: #BC8417; font-size: 36px; letter-spacing: -1.5px; text-align: center;">Koło</p>

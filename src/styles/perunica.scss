@@ -69,7 +69,7 @@ header {
 
 .position-nav{
     position: fixed;
-    z-index: 5;
+    z-index: 10;
     padding-left: 10%;
 }
 main {
@@ -309,19 +309,89 @@ footer, span{
     background-position: 76% 88%;
 }
 
-.pytam{
-    font-family: $im-fe;
-    color: white;
-    letter-spacing: -0.5px;
-    font-size: 1.625em;
-    font-weight: normal;
-    padding: 25% 28% 10% 10%;
+.pytam {
+    width: 100%;
+    background-color: #000;
+
+    .pytam-block {
+        margin: auto;
+        text-align: center;
+        width: 400px;
+        font-family: $im-fe;
+        color: white;
+        letter-spacing: -0.5px;
+        font-size: 1.625em;
+        font-weight: normal;
+        padding: 100px 0px 100px 0px;
+
+        }
 
 }
 
 .p{
     color: #BC8417;
 }
+
+
+.all-images-titles {
+    height: 1240px;
+    width: 100%;
+    min-width: 1200px;
+    position: relative;
+    padding-top: 10px;
+    justify-content: space-between;
+    margin: auto;
+
+    .to-title {
+        width: 1242px;
+        height: 790px;
+        min-width: 1200px;
+        position: relative;
+        padding-top: 0px;
+        justify-content: space-between;
+        margin: auto;
+        }
+    .bottles {
+        position: absolute;
+        display: inline-block;
+        padding: 400px 10px 0px 0px;
+        z-index: 2;
+    }
+    .rune-central {
+        position: absolute;
+        display: inline-block;
+        padding: 400px 0px 0px 0px;
+        margin-right: 100px;
+        z-index: 3;
+        margin-left: 320px;
+    }
+
+    .fire-images {
+        position: absolute;
+        padding: 200px 0px 0px 0px;
+        display: inline-block;
+        z-index: 4;
+        margin-left: 650px;
+    }
+    .fire-rune {
+        position: absolute;
+        padding: 0px 0px 0px 150px;
+        display: inline-block;
+        z-index: 5;
+        margin-left: 650px;
+    }
+}
+.black-block {
+    background-color: #000;
+    width: 100%;
+    height: 450px;
+    position: absolute;
+    padding: 200px 0px 0px 0px;
+    margin-bottom: 200px;
+    display: inline-block;
+    z-index: 0;
+}
+
 
 .images-container1{
     height: 800px;

@@ -311,7 +311,7 @@ footer, span{
 
 .pytam {
     width: 100%;
-    background-color: #000;
+    background-color: #0F0C07;
 
     .pytam-block {
         margin: auto;
@@ -364,6 +364,16 @@ footer, span{
         margin-right: 100px;
         z-index: 3;
         margin-left: 320px;
+        -webkit-animation: action 1s infinite  alternate;
+    animation: action 1s infinite  alternate;
+    @-webkit-keyframes action {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(-20px); }
+    }
+    @keyframes action {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(-20px); }
+    }
     }
 
     .fire-images {
@@ -379,10 +389,20 @@ footer, span{
         display: inline-block;
         z-index: 5;
         margin-left: 650px;
+        -webkit-animation: action 1s infinite  alternate;
+    animation: action 1s infinite  alternate;
+    @-webkit-keyframes action {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(-20px); }
+    }
+    @keyframes action {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(-20px); }
+    }
     }
 }
 .black-block {
-    background-color: #000;
+    background-color: #0F0C07;
     width: 100%;
     height: 450px;
     position: absolute;
@@ -743,29 +763,30 @@ footer, span{
 }
 
 .m1{
-    position: relative;
+    position: absolute;
     z-index: 3;
-    top: 11%;
-    right: 0%;
+    top: 135%;
+    left: auto;
 }
 .m2{
-    position: relative;
+    position: absolute;
     z-index: 2;
-    left: -10%;
-    top: 12%;
+    top: 135%;
+    left: 33%;
     width: 127px;
     height: 127px;
 }
 .m3{
-    position: relative;
+    position: absolute;
     z-index: 1;
-    right: 5%;
+    right: 0%;
+    top: 125%;
 }
 .m4{
-    position: relative;
+    position: absolute;
     z-index: 3;
     right: 12%;
-    top: 10%;
+    top: 118%;
 }
 
 .pytam-mobile{

@@ -3,7 +3,20 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 // let htmlPageNames = ['demo-index', 'index-mobile', 'informacja-turystyczna', 'informacja-turystyczna-mobile', 'kolo-roku', 'kolo-roku-mobile', 'kontakt', 'kontakt-mobile', 'odkryjperunice', 'odkryj-perunice-mobile', 'szlak-kulinarny', 'szlak-kulinarny-mobile', 'team-building', 'team-building-mobile'];
-let htmlPageNames = ['demo-index', 'index-mobile', 'informacja-turystyczna', 'informacja-turystyczna-mobile', 'kolo-roku', 'kolo-roku-mobile', 'kontakt', 'kontakt-mobile', 'odkryjperunice', 'odkryj-perunice-mobile', 'szlak-kulinarny', 'szlak-kulinarny-mobile', 'team-building', 'team-building-mobile'];
+let htmlPageNames = ['demo-index',
+                    'index-mobile',
+                    'informacja-turystyczna',
+                    'informacja-turystyczna-mobile',
+                    'kolo-roku',
+                    'kolo-roku-mobile',
+                    'kontakt',
+                    'kontakt-mobile',
+                    'odkryjperunice',
+                    'odkryj-perunice-mobile',
+                    'szlak-kulinarny',
+                    'szlak-kulinarny-mobile',
+                    'team-building',
+                    'team-building-mobile'];
 let multipleHtmlPlugins = htmlPageNames.map(name => {
   return new HtmlWebpackPlugin({
     template: `./src/${name}.html`, // relative path to the HTML files
@@ -13,6 +26,25 @@ let multipleHtmlPlugins = htmlPageNames.map(name => {
     inject: true
   })
 });
+
+
+let htmlPageNamesContrast = ['index-c', 'index-mobile-c',
+                    'informacja-turystyczna-c', 'informacja-turystyczna-mobile-c',
+                    'kolo-roku-c', 'kolo-roku-mobile-c',
+                    'kontakt-c', 'kontakt-mobile-c',
+                    'odkryjperunice-c', 'odkryj-perunice-mobile-c',
+                    'szlak-kulinarny-c', 'szlak-kulinarny-mobile-c',
+                    'team-building-c', 'team-building-mobile-c'];
+let multipleHtmlPluginsContrast = htmlPageNamesContrast.map(name => {
+  return new HtmlWebpackPlugin({
+    template: `./src/${name}.html`, // relative path to the HTML files
+    filename: `${name}.html`, // output HTML files
+    //chunks: [`${name}`], // respective JS files
+    favicon: './src/images/favicon.ico',
+    inject: true
+  })
+});
+
 
 module.exports = {
   entry: './src/scripts/index.js',
@@ -27,7 +59,7 @@ module.exports = {
       chunkFilename: '[id].css'
     }),
     new CleanWebpackPlugin()
-  ].concat(multipleHtmlPlugins),
+  ].concat(multipleHtmlPlugins).concat(multipleHtmlPluginsContrast),
   module: {
     rules: [
       {

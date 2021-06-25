@@ -24,7 +24,7 @@ let multipleHtmlPlugins = htmlPageNames.map(name => {
     template: `./src/${name}.html`, // relative path to the HTML files
     filename: `${name}.html`, // output HTML files
     //chunks: [`${name}`], // respective JS files
-    favicon: './src/images/favicon.ico',
+    favicon: './src/images/content/perunica-logo.png',
     inject: true
   })
 });
@@ -42,7 +42,7 @@ let multipleHtmlPluginsContrast = htmlPageNamesContrast.map(name => {
     template: `./src/${name}.html`, // relative path to the HTML files
     filename: `${name}.html`, // output HTML files
     //chunks: [`${name}`], // respective JS files
-    favicon: './src/images/favicon.ico',
+    favicon: './src/images/content/perunica-logo.png',
     inject: true
   })
 });
@@ -54,7 +54,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/index.html',
       filename: './index.html',
-      favicon: './src/images/favicon.ico'
+      favicon: './src/images/content/perunica-logo.png'
     }),
     new MiniCssExtractPlugin({
       filename: '[name].css',

@@ -18,8 +18,8 @@ let htmlPageNames = ['demo-index',
                     'szlak-kulinarny-mobile',
                     'team-building',
                     'team-building-mobile',
-                    'szlak-czarownic.html',
-                    'szlak-czarownic-mobile.html',
+                    'szlak-czarownic',
+                    'szlak-czarownic-mobile',
                     'pdfs'];
 let multipleHtmlPlugins = htmlPageNames.map(name => {
   return new HtmlWebpackPlugin({
@@ -38,8 +38,8 @@ let htmlPageNamesContrast = ['index-c', 'index-mobile-c',
                     'kontakt-c', 'kontakt-mobile-c',
                     'odkryjperunice-c', 'odkryj-perunice-mobile-c',
                     'szlak-kulinarny-c', 'szlak-kulinarny-mobile-c',
-                    'team-building-c', 'team-building-mobile-c', 
-                    'szlak-czarownic-c.html', 'szlak-czarownic-mobile-c.html'];
+                    'team-building-c', 'team-building-mobile-c',
+                    'szlak-czarownic-c', 'szlak-czarownic-mobile-c'];
 let multipleHtmlPluginsContrast = htmlPageNamesContrast.map(name => {
   return new HtmlWebpackPlugin({
     template: `./src/${name}.html`, // relative path to the HTML files

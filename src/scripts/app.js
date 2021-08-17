@@ -62,113 +62,24 @@ function SwitchText() {
 }
 
 function HighContrast() {
-    $('.nav-link').css('color', '#FFFF00');
-    $('.opis-title').css('color', '#FFFF00');
-    $('.btn2').css('color', '#FFFF00');
-    $('.btn4').css('color', '#FFFF00');
-    $('.btn2-mobile').css('color', '#FFFF00');
-    $('.pytam').css('color', '#FFFF00');
-    $('.pytam-mobile').css('color', '#FFFF00');
-    $('body').css('background-image', 'none');
-    $('.index-bg').css('background-image', 'none');
-    $('main').css('background-image', 'none');
-    $('.main1').css('background-image', 'none');
-    $('.main1').css('background-color', '#000');
-    $('.col').css('background-color', '#000');
-    $('body').css('background-color', '#000');
-    //$('.row').css('color', '#FFFF00');
-    $('.font-im-regular2').css('color', '#FFFF00');
-    //$('.row').css('background-color', '#000');
-    $('text').css('color', '#FFFF00');
-    $('.footer-opis1').css('color', '#FFFF00');
-    $('.footer-opis2').css('color', '#FFFF00');
+    console.log('Switch to high contrast');
+    let url = window.location.href;
 
-    $('#contrast1').show();
-    $('#contrast').hide();
-    $('#text-size1').show();
-    $('#text-size').hide();
+    if (url.indexOf('-c.html') == -1) {
+        let newUrl = url.substring(0, url.length - 5) + "-c.html"
+        window.location.href = newUrl;
+    }
 
-    $('#logo-fb-white').show();
-    $('#logo-fb-black').hide();
-    $('#line-white').show();
-    $('#line-black').hide();
-    $('#line-white1').show();
-    $('#line-black1').hide();
-
-    // check if there is already pressed button
 }
 
 function NormalContrast() {
-    $('.nav-link').css('color', cssValNavColor);
-    $('.opis-title').css('color', cssValOpisColor);
-    $('.btn2').css('color', cssValBtn2Color);
-    $('.btn4').css('color', cssValBtn4Color);
-    $('.btn2-mobile').css('color', cssValBtn2ColorMobile);
-    $('.pytam').css('color', cssValPytamColor);
-    $('.pytam-mobile').css('color', cssValPytamColorMobile);
-    $('body').css('background-image', cssValBodyImage);
-    $('.index-bg').css('background-image', cssValIndexImage);
-    $('main').css('background-image', cssValMainImage);
-    $('.main1').css('background-image', cssValMain1Image);
-    $('.main1').css('background-color', cssValMain1Color);
-    $('.col').css('background-color', cssValColColor);
-    $('body').css('background-color', cssValBodyColor);
-    // $('.row').css('color', cssValRowColor);
-    $('.font-im-regular2').css('color', cssValFontColor);
-     //$('.row').css('background-color', cssValRowColorbk);
-    $('text').css('color', cssValTextColor);
-    $('.footer-opis1').css('color', cssValFooterColor);
-    $('.footer-opis2').css('color', cssValFooterColor);
+    console.log('Switch to normal contrast');
+    let url = window.location.href;
 
-
-    $('#text-size1').hide();
-    $('#text-size').show();
-    $('#contrast1').hide();
-    $('#contrast').show();
-
-    $('#logo-fb-white').hide();
-    $('#logo-fb-black').show();
-    $('#line-white').hide();
-    $('#line-black').show();
-    $('#line-white1').hide();
-    $('#line-black1').show();
-
-    var currentScroll = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
-    // implement your logic according to requirement
-    if (currentScroll > 50) {
-        // change color here navbar a
-        $('.nav-link').css('color', 'white');
-        $('#logo-instagram-white').show();
-        $('#logo-instagram-black').hide();
-        $('.position-nav').css({ "background-color": "rgba(0,0,0,0.8)" })
-        $('#logo-fb-white').show();
-        $('#logo-fb-black').hide();
-        $('#line-white').show();
-        $('#line-black').hide();
-        $('#line-white1').show();
-        $('#line-black1').hide();
-        $('#text-size1').show();
-        $('#text-size').hide();
-        $('#contrast1').show();
-        $('#contrast').hide();
-    } else {
-        $('.nav-link').css('color', 'black');
-        $('#logo-instagram-white').hide();
-        $('#logo-instagram-black').show();
-        $('.position-nav').css({ "background-color": "rgba(0,0,0,0.0)" })
-        $('#logo-fb-white').hide();
-        $('#logo-fb-black').show();
-        $('#line-white').hide();
-        $('#line-black').show();
-        $('#line-white1').hide();
-        $('#line-black1').show();
-        $('#text-size1').hide();
-        $('#text-size').show();
-        $('#contrast1').hide();
-        $('#contrast').show();
-
+    if (url.indexOf('-c.html') != -1) {
+        let newUrl = url.substring(0, url.length - 7) + ".html"
+        window.location.href = newUrl;
     }
-
 }
 
 function LoadContrast() {
@@ -180,14 +91,14 @@ function LoadContrast() {
 }
 
 function SwitchContrast() {
-    // if (localStorage.getItem("highContrastOn") == "true") {
-    //     localStorage.setItem("highContrastOn", false);
-    //     NormalContrast();
-    // }
-    // else {
-    //     localStorage.setItem("highContrastOn", true);
-    //     HighContrast();
-    // }
+    if (localStorage.getItem("highContrastOn") == "true") {
+        localStorage.setItem("highContrastOn", false);
+        NormalContrast();
+    }
+    else {
+        localStorage.setItem("highContrastOn", true);
+        HighContrast();
+    }
 }
 
 function OnFirstLoad() {

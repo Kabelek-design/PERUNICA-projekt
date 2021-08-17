@@ -18,11 +18,6 @@ let htmlPageNames = ['demo-index',
                     'szlak-kulinarny-mobile',
                     'team-building',
                     'team-building-mobile',
-<<<<<<< HEAD
-=======
-                    'szlak-czarownic',
-                    'szlak-czarownic-mobile',
->>>>>>> 2557cd09b37c1ef1ded8288d5e9cd004aca6ddbe
                     'pdfs'];
 let multipleHtmlPlugins = htmlPageNames.map(name => {
   return new HtmlWebpackPlugin({

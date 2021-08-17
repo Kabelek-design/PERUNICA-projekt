@@ -36,8 +36,7 @@ let htmlPageNamesContrast = ['index-c', 'index-mobile-c',
                     'kontakt-c', 'kontakt-mobile-c',
                     'odkryjperunice-c', 'odkryj-perunice-mobile-c',
                     'szlak-kulinarny-c', 'szlak-kulinarny-mobile-c',
-                    'team-building-c', 'team-building-mobile-c',
-                    'szlak-czarownic-c', 'szlak-czarownic-mobile-c'];
+                    'team-building-c', 'team-building-mobile-c'];
 let multipleHtmlPluginsContrast = htmlPageNamesContrast.map(name => {
   return new HtmlWebpackPlugin({
     template: `./src/${name}.html`, // relative path to the HTML files
